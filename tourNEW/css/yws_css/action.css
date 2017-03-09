@@ -10,11 +10,8 @@ body{
 body>*{
     flex-grow:1;
 }
-header>*{
-    box-sizing: border-box;
-}
-section>*{
-    box-sizing: border-box;
+*{
+    box-sizing:border-box;
 }
 /*导航栏开始*/
 header{
@@ -230,6 +227,9 @@ footer{
     font-size: 12px;
     justify-content: space-around;
 
+}
+footer *{
+ box-sizing:content-box!important;
 }
 footer a{
     display: flex;
