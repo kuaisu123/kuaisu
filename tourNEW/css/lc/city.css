@@ -1,5 +1,6 @@
 ﻿* {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 html,
 body {
@@ -28,6 +29,7 @@ body {
   height: .48rem;
   background: #fff;
   border-radius: .5rem;
+  -webkit-border-radius: .5rem;
   display: flex;
   align-items: center;
   padding-left: .2rem;
@@ -45,6 +47,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translate(0, -35%);
+  -webkit-transform: translate(0, -35%);
   left: .24rem;
   width: .63rem;
   height: .64rem;
@@ -120,6 +123,7 @@ body {
 .main .content a {
   height: .45rem;
   border-radius: .3rem;
+  -webkit-border-radius: .3rem;
   border: .01rem solid #A3A3A3;
   display: flex;
   float: left;
@@ -134,6 +138,7 @@ body {
   height: .05rem;
   background: #A3A3A3;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
 .main .content a span {
   padding: 0 .15rem;

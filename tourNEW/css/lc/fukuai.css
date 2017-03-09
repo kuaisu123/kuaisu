@@ -1,5 +1,6 @@
 ﻿* {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 html,
 body {
@@ -37,6 +38,7 @@ i {
   font-size: 19px;
   padding: 0 .1rem;
   text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
+  -webkit-text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
 }
 .header .title img {
   width: .58rem;
@@ -51,6 +53,7 @@ i {
   font-size: 19px;
   padding: 0 .1rem;
   text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
+  -webkit-text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
   line-height: .88rem;
 }
 .header span img {
@@ -207,6 +210,7 @@ i {
   right: 0;
   top: 50%;
   transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
 }
 .main .fapiao {
   width: 100%;
@@ -243,6 +247,7 @@ i {
   text-align: center;
   font-size: 18px;
   text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
+  -webkit-text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
   color: #fff;
   display: flex;
 }

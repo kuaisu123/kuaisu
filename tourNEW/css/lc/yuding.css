@@ -1,5 +1,6 @@
 ﻿* {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 html,
 body {
@@ -32,6 +33,7 @@ body {
   font-size: 19px;
   padding: 0 .1rem;
   text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
+  -webkit-text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
 }
 .header .title img {
   width: .58rem;
@@ -46,6 +48,7 @@ body {
   font-size: 19px;
   padding: 0 .1rem;
   text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
+  -webkit-text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
   line-height: .88rem;
 }
 .header span img {
@@ -107,6 +110,7 @@ body {
   bottom: -0.28rem;
   left: 50%;
   transform: translate(-50%);
+  -webkit-transform: translate(-50%);
   display: none;
 }
 .main .nav .active {
@@ -147,6 +151,7 @@ body {
   text-align: center;
   background: #F5F5F5;
   border-radius: .1rem;
+  -webkit-border-radius: .1rem;
 }
 .main .line2 img {
   width: .64rem;
@@ -162,6 +167,7 @@ body {
   height: 100%;
   background: #F5F5F5;
   border-radius: .1rem;
+  -webkit-border-radius: .1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -240,6 +246,7 @@ body {
   text-align: center;
   font-size: 18px;
   text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
+  -webkit-text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
   color: #fff;
   line-height: .98rem;
 }

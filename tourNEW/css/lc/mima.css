@@ -1,5 +1,6 @@
 ﻿* {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 html,
 body {
@@ -30,6 +31,7 @@ body {
   font-size: 19px;
   padding: 0 .1rem;
   text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
+  -webkit-text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
 }
 .header .title img {
   width: .58rem;
@@ -71,9 +73,11 @@ body {
   width:1rem;
   height:1rem;
   border-radius: 8px;
+  -webkit-border-radius: 8px;
   border:0;
   outline:0;
   box-shadow:0 0 0.2rem 0.01rem rgba(0,0,255,0.1);
+  -webkit-box-shadow:0 0 0.2rem 0.01rem rgba(0,0,255,0.1);
   margin:0.1rem;
   font-size:30px;
   color: #396CFF;

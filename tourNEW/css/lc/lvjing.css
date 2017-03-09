@@ -1,5 +1,6 @@
 ﻿* {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 html,
 body {
@@ -88,6 +89,7 @@ body {
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
+  -webkit-transform: translate(-50%);;
   color: #fff;
   font-size: 13px;
 }
@@ -95,9 +97,11 @@ body {
   width: .14rem;
   height: .14rem;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
   background: #252EFF;
   position: absolute;
   bottom: -0.3rem;
   left: 50%;
   transform: translate(-50%);
+  -webkit-transform: translate(-50%);
 }

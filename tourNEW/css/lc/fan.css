@@ -1,5 +1,6 @@
 ﻿* {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 html,
 body {
@@ -33,6 +34,7 @@ body {
   font-size: 19px;
   padding: 0 .1rem;
   text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
+  -webkit-text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
 }
 .header .title img {
   width: .58rem;
@@ -79,6 +81,7 @@ body {
   left: 0;
   background: #3663F1;
   border-radius: .1rem;
+  -webkit-border-radius: .1rem;
 }
 .main .nav .daohang .con {
   width: 1.9rem;
@@ -89,7 +92,9 @@ body {
   left: 50%;
   margin-left: -0.95rem;
   border-radius: .1rem;
+  -webkit-border-radius: .1rem;
   box-shadow: 0.01rem -0.05rem 0.1rem 0.03rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0.01rem -0.05rem 0.1rem 0.03rem rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
 }

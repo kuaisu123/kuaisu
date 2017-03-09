@@ -22,6 +22,7 @@ header span{
     align-items: center;
     justify-content: space-around;
     text-shadow: 0px  2px 5px rgba(0,0,0,.5);
+    -webkit-text-shadow: 0px  2px 5px rgba(0,0,0,.5);
 }
 header span b{
     display: flex;
@@ -44,8 +45,10 @@ header span i{
     display: inline-block;
     background: #fff;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     margin: 0 0.12rem;
     box-shadow: 0 2px 1px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 2px 1px 0px rgba(0,0,0,.5);
 }
 header span i:nth-of-type(1),header span i:nth-of-type(6){
     width: 0.03rem;
@@ -78,6 +81,7 @@ section.plane-list .plane{
     width: 100%;
     margin-bottom: 0.22rem;
     border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
     height: 2.43rem;
     font-size: 15px;
     display: flex;
@@ -103,6 +107,7 @@ section.plane-list .plane .plane-dur{
     flex-direction: column;
     justify-content: space-around;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     padding: 0.15rem 0.5rem 0 1.2rem;
     width: 100%;
 }
@@ -133,6 +138,7 @@ section.plane-list .plane .plane-eat{
 section.pro-list{
     width: 100%;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     padding:0 0.24rem;
 }
 section.pro-list h2{
@@ -150,6 +156,7 @@ section.pro-list .pro{
     font-size: 12px;
     justify-content: space-between;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     padding: 0 0.27rem;
 }
 section.pro-list .pro .pro-mes{
@@ -163,6 +170,7 @@ section.pro-list .pro .pro-mes span:nth-of-type(1){
     height: 0.32rem;
     border: 1px solid #313131;
     border-radius: 0.15rem;
+    -webkit-border-radius: 0.15rem;
     text-align: center;
     line-height: 0.33rem;
     margin-right:0.19rem ;
@@ -187,7 +195,7 @@ section.pro-list .pro .pro-ad .pro-ad-left{
     justify-content: space-around;
     padding:.05rem 0;
     box-sizing:border-box;
-
+	-webkit-box-sizing:border-box;
 }
 section.pro-list .pro .pro-ad .pro-ad-left span{
     color: #D3D3D3;
@@ -197,6 +205,7 @@ section.pro-list .pro .pro-ad .pro-ad-left span b{
     height: 0.32rem;
     border: 1px solid #CECECE;
     border-radius: 0.15rem;
+    -webkit-border-radius: 0.15rem;
     text-align: center;
     line-height: 0.33rem;
     margin-right:0.19rem ;

@@ -1,5 +1,6 @@
 ﻿* {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 html,
 body {
@@ -34,6 +35,7 @@ body {
   font-size: 19px;
   padding: 0 .1rem;
   text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
+  -webkit-text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
 }
 .header .title img {
   width: .58rem;
@@ -48,6 +50,7 @@ body {
   font-size: 19px;
   padding: 0 .1rem;
   text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
+  -webkit-text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
   line-height: .88rem;
 }
 .header span img {
@@ -82,6 +85,7 @@ body {
   padding: .2rem;
   background: #fff;
   border-radius: .1rem;
+  -webkit-border-radius: .1rem;
 }
 .main .info h3 {
   font-size: 13px;
@@ -165,6 +169,7 @@ body {
   text-align: center;
   font-size: 18px;
   text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
+  -webkit-text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
   color: #fff;
   line-height: .98rem;
 }
