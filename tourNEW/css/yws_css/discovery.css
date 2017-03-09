@@ -12,6 +12,7 @@ header{
     height: 0.88rem;
     background: #3867fa;
     display: flex;
+    display:-webkit-flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
@@ -23,6 +24,7 @@ header .left{
     width: 1.4rem;
     height:100%;
     display: flex;
+    display:-webkit-flex;
     align-items: center;
     justify-content: space-around;
     font-size: 0.22rem;
@@ -44,6 +46,7 @@ header .right{
     height:100%;
     padding-right: 0.24rem;
     display: flex;
+    display:-webkit-flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -62,6 +65,7 @@ section{
     background: #fff;
     border-radius: 0 0 0.12rem 0.12rem;
     display: flex;
+    display:-webkit-flex;
     justify-content: center;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.27);
 }
@@ -70,7 +74,10 @@ section{
     height:1.12rem;
     margin: 0 0.42rem;
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
+    -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
     align-items: center;
     justify-content: center;
     color: #3867fa;
@@ -109,6 +116,7 @@ section{
     bottom: 1.8rem;
     left:0.4rem;
     display: flex;
+    display:-webkit-flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 30px 5px rgba(13, 67, 113, 0.51);
@@ -119,6 +127,7 @@ section{
     border-radius: 50%;
     background: rgba(253, 254, 254, 0.37);
     display: flex;
+    display:-webkit-flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 30px 5px rgba(13, 67, 113, 0.51);
@@ -214,7 +223,10 @@ section{
     right:0.5rem;
     top:1.8rem;
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
+    -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
 }
 .searchbox .right a{
     width:0.54rem;
@@ -266,6 +278,7 @@ section{
     width:100%;
     height:50%;
     display: flex;
+    display:-webkit-flex;
     align-items: center;
     color:#5367ff;
 }

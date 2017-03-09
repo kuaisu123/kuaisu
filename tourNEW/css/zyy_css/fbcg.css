@@ -1,7 +1,10 @@
 body{
 	/*font-size: 16px;*/
 	display: flex;
+	display:-webkit-flex;
 	flex-direction:column;
+	-webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
 }
 body,html{
 	width: 100%;
@@ -18,6 +21,7 @@ body,html{
 	width: 100%;
 	background: #3867FA;
 	display: flex;
+	display:-webkit-flex;
 	justify-content:center;
 	align-items:center;
 	position: relative;
@@ -25,6 +29,7 @@ body,html{
 .header-dian{
 	height: 100%;
 	display: flex;
+	display:-webkit-flex;
 	align-items:center;
 }
 .header-dian .d1{
@@ -69,6 +74,7 @@ body,html{
 	width: .89rem;
 	height: .89rem;
 	display: flex;
+	display:-webkit-flex;
 	justify-content:center;
 	align-items:center;
 }

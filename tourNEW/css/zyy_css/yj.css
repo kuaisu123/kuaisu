@@ -2,7 +2,10 @@
 
 body{
 	display: flex;
+	display:-webkit-flex;
 	flex-direction:column;
+	-webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
 }
 body,html{
 	width: 100%;
@@ -36,6 +39,7 @@ html.over body {
 	width: 100%;
 	background: #3867FA;
 	display: flex;
+	display:-webkit-flex;
 	justify-content:center;
 	align-items:center;
 	position: relative;
@@ -43,6 +47,7 @@ html.over body {
 .header-dian{
 	height: 100%;
 	display: flex;
+	display:-webkit-flex;
 	align-items:center;
 }
 .header-dian .d1{
@@ -87,6 +92,7 @@ html.over body {
 	width: .89rem;
 	height: .89rem;
 	display: flex;
+	display:-webkit-flex;
 	justify-content:center;
 	align-items:center;
 }
@@ -106,6 +112,7 @@ html.over body {
 	height: 100%;
 	float: right;
 	display: flex;
+	display:-webkit-flex;
 	justify-content:center;
 	align-items:center;
 }
@@ -119,6 +126,7 @@ html.over body {
 	text-align: center;
 	font-size: .18rem;
 	display: flex;
+	display:-webkit-flex;
 	justify-content:center;
 	align-items:center;
 	z-index: 99;
@@ -178,7 +186,10 @@ html.over body {
 	height: 1.27rem;
 	background: #fff;
 	display: flex;
+	display:-webkit-flex;
 	flex-direction: column;
+	-webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
 	justify-content:center;
 }
 .zyy-tx{
@@ -222,6 +233,7 @@ html.over body {
 	margin: 0 auto;
 	border-top: 1px solid #EBEBEB;
 	display: flex;
+	display:-webkit-flex;
 	padding: .13rem 0;
 }
 .zyy-xqx li{
@@ -229,8 +241,11 @@ html.over body {
 	width: 33.333333%;
 	text-align: center;
 	display: flex;
+	display:-webkit-flex;
 	align-items:center;
 	flex-direction:column;
+	-webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
 	border-right: 1px solid #EBEBEB;
 }
 .zyy-xqx li:last-child{
@@ -249,6 +264,7 @@ html.over body {
 	height: .88rem;
 	margin: 0 auto;
 	display: flex;
+	display:-webkit-flex;
 	align-items:center;
 }
 .zyy-gwd li{
@@ -280,6 +296,7 @@ html.over body {
 	margin: 0 auto;
 	margin-bottom: .1rem;
 	display: flex;
+	display:-webkit-flex;
 	align-items:center;
 }
 .zyy-autdo div{
@@ -313,6 +330,7 @@ html.over body {
 	width: 100%;
 	height: .71rem;
 	display: flex;
+	display:-webkit-flex;
 	align-items:center;
 	justify-content:center;
 	margin-bottom: .23rem;
@@ -340,6 +358,7 @@ html.over body {
 	height: .31rem;
 	margin-bottom: .25rem;
 	display: flex;
+	display:-webkit-flex;
 	align-items:center;
 }
 .zyy-one .title .zyy-p1{
@@ -374,6 +393,7 @@ html.over body {
 	width: auto;
 	height: 2.2rem;
 	display: flex;
+	display:-webkit-flex;
 	/*overflow: hidden;*/
 }
 .center-box .items{
@@ -397,6 +417,7 @@ html.over body {
 	height: auto;
 	padding-right: .16rem;
 	display: flex;
+	display:-webkit-flex;
 	justify-content:flex-end;
 	margin-top: -.07rem;
 }
@@ -404,6 +425,7 @@ html.over body {
 	width: auto;
 	height: auto;
 	display: flex;
+	display:-webkit-flex;
 	align-items:center;
 }
 .love1 p{
@@ -471,6 +493,7 @@ html.over body {
 	height: 0.6rem;
 	margin:1rem auto;
 	display: flex;
+	display:-webkit-flex;
 	justify-content:space-between;
 }
 .zyy-enjoy-box .zyy-qq>div{
@@ -486,6 +509,7 @@ html.over body {
 	height: 100%;
 	display: block;
 	display: flex;
+	display:-webkit-flex;
 	justify-content:center;
 	align-items:center;
 }

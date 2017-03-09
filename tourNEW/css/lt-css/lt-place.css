@@ -6,7 +6,10 @@ html,body{
 }
 body{
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
+    -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
     flex-grow: 1;
 }
 header.header{
@@ -14,7 +17,10 @@ header.header{
     height:0.88rem;
     background: #3867FA;
     display: flex;
+    display:-webkit-flex;
     flex-direction: row;
+    -webkit-box-orient:horizontal;
+  -webkit-box-direction: normal;
     align-items: center;
     box-sizing: border-box;
     position: relative;

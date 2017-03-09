@@ -12,6 +12,7 @@ header span{
     height: 100%;
     margin: 0 auto;
     display: flex;
+    display:-webkit-flex;
     width: 3.15rem;
     align-items: center;
     justify-content: space-around;
@@ -123,6 +124,7 @@ section.hotel-show{
     margin-top: 0.18rem;
     height: 0.35rem;
     display: flex;
+    display:-webkit-flex;
     justify-content: space-between;
 }
 .hotel-show .hotel-bottom .info strong{
@@ -219,6 +221,7 @@ section.hotel-show{
 }
 .hotel-detail .comment{
     display: flex;
+    display:-webkit-flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 0.2rem;
@@ -248,6 +251,7 @@ section.hotel-show{
 }
 .hotel-detail .check{
     display: flex;
+    display:-webkit-flex;
     justify-content: center;
     align-items: center;
 }

@@ -5,7 +5,10 @@ body,html{
 }
 body{
 	display: flex;
+	display:-webkit-flex;
 	flex-direction:column;
+	-webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
 	font-size: 16px;
 }
 body>*{
@@ -28,6 +31,7 @@ header span{
     height: 100%;
     margin: 0 auto;
     display: flex;
+    display:-webkit-flex;
     width: 3.65rem;
     align-items: center;
     justify-content: space-around;
@@ -86,8 +90,11 @@ body .main{
 	height: 100%;
 	background: rgba(0,0,0,0.7);
 	display: flex;
+	display:-webkit-flex;
 	color: white;
 	flex-direction:column;
+	-webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
 	justify-content:center;
 	align-items:center;
 	transition:transform 0.3s linear;
@@ -119,7 +126,10 @@ body .main{
 	height: 100%;
 	background: #3867FA;
 	display: flex;
+	display:-webkit-flex;
 	flex-direction:column;
+	-webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
 	justify-content:space-around;
 	align-items:center;
 	transition:transform 0.3s linear;
@@ -144,13 +154,17 @@ footer{
 	height: 0.98rem;
 	background: #003EFF;
 	display: flex;
+	display:-webkit-flex;
 	font-size: 12px;
 	justify-content: space-around;
 }
 footer a{
     display: flex;
+    display:-webkit-flex;
     color: #fff;
     flex-direction: column;
+    -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;

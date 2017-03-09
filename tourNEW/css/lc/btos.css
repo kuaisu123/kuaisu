@@ -18,6 +18,7 @@ header span{
     height: 100%;
     margin: 0 auto;
     display: flex;
+    display:-webkit-flex;
     width: 4rem;
     align-items: center;
     justify-content: space-around;
@@ -26,6 +27,7 @@ header span{
 }
 header span b{
     display: flex;
+    display:-webkit-flex;
     width: 2.2rem;
     font-weight: normal;
     align-items: center;
@@ -85,11 +87,15 @@ section.plane-list .plane{
     height: 2.43rem;
     font-size: 15px;
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
+    -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
     background: url(../../images/lc/b.png) no-repeat center center/cover;
 }
 section.plane-list .plane .plane-info{
     display:flex;
+    display:-webkit-flex;
     box-sizing: border-box;
     padding: 0 0.2rem;
     align-items: center;
@@ -103,8 +109,11 @@ section.plane-list .plane .plane-info span:nth-of-type(1){
 section.plane-list .plane .plane-dur{
     height: 1.16rem;
     display: flex;
+    display:-webkit-flex;
     align-items: center;
     flex-direction: column;
+    -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
     justify-content: space-around;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -118,6 +127,7 @@ section.plane-list .plane .plane-dur>span i{
 section.plane-list .plane .plane-dur>span{
     width: 100%;
     display: flex;
+    display:-webkit-flex;
     color: #595959;
     justify-content: space-between;
     align-items: center;
@@ -127,6 +137,7 @@ section.plane-list .plane .plane-dur>span:nth-of-type(2){
 }
 section.plane-list .plane .plane-eat{
     display: flex;
+    display:-webkit-flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 1.2rem;
@@ -152,7 +163,10 @@ section.pro-list .pro{
     margin-bottom: 0.22rem;
     background: url(../../images/lc/b2.png) no-repeat center center/cover;
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
+    -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
     font-size: 12px;
     justify-content: space-between;
     box-sizing: border-box;
@@ -162,6 +176,7 @@ section.pro-list .pro{
 section.pro-list .pro .pro-mes{
     height: 0.53rem;
     display: flex;
+    display:-webkit-flex;
     align-items: center;
     position: relative;
 }
@@ -187,11 +202,15 @@ section.pro-list .pro .pro-mes:after{
 section.pro-list .pro .pro-ad{
     height: 1.1rem;
     display: flex;
+    display:-webkit-flex;
     justify-content: space-between;
 }
 section.pro-list .pro .pro-ad .pro-ad-left{
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
+    -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
     justify-content: space-around;
     padding:.05rem 0;
     box-sizing:border-box;
@@ -213,6 +232,7 @@ section.pro-list .pro .pro-ad .pro-ad-left span b{
 section.pro-list .pro .pro-ad .pro-ad-right{
     color: #FF1F45;
     display: flex;
+    display:-webkit-flex;
     align-items: center;
 }
 // section.pro-list .pro .pro-ad .pro-ad-right span:last-of-type{
@@ -233,7 +253,10 @@ section.pro-list .pro .pro-ad .pro-ad-right{
     height: 0.74rem;
     margin-left: 0.05rem;
     display: flex;
+    display:-webkit-flex;
     flex-direction: column;
+    -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
     align-items: center;
     color:#FF1F45;
     justify-content: space-around;

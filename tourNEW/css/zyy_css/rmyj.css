@@ -1,7 +1,10 @@
 body{
 	font-size: 16px;
 	display: flex;
+	display:-webkit-flex;
 	flex-direction:column;
+	-webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
 	position: relative;
 }
 body,html{
@@ -24,6 +27,7 @@ html.over body {
 	width: 100%;
 	background: #3867FA;
 	display: flex;
+	display:-webkit-flex;
 	justify-content:center;
 	align-items:center;
 	position: relative;
@@ -31,6 +35,7 @@ html.over body {
 .header-dian{
 	height: 100%;
 	display: flex;
+	display:-webkit-flex;
 	align-items:center;
 }
 .header-dian .d1{
@@ -75,6 +80,7 @@ html.over body {
 	width: .89rem;
 	height: .89rem;
 	display: flex;
+	display:-webkit-flex;
 	justify-content:center;
 	align-items:center;
 }
@@ -100,11 +106,13 @@ html.over body {
 .content-1{
 	width: 100%;
 	display: flex;
+	display:-webkit-flex;
 }
 .content-1 .content-title{
 	flex: 1 0 auto;
 	height: 100%;
 	display: flex;
+	display:-webkit-flex;
 	align-items:center;
 	justify-content:flex-end;
 }
@@ -292,6 +300,7 @@ html.over body {
 	height: 1.07rem;
 	/*flex:0 0 auto;*/
 	display: flex;
+	display:-webkit-flex;
 	justify-content: center;
 	align-items:center;
 	position: relative;
@@ -365,6 +374,7 @@ html.over body {
 	width: 100%;
 	height: 1rem;
 	display: flex;
+	display:-webkit-flex;
 	justify-content: space-between;
 }
 .zyy-mores .left a{

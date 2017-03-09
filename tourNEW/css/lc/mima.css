@@ -21,6 +21,7 @@ body {
   height: .88rem;
   margin: 0 auto;
   display: flex;
+  display:-webkit-flex;
   flex: none;
   max-width: 3rem;
   justify-content: space-between;
@@ -64,6 +65,7 @@ body {
 }
 .main .mima-box{
   display: flex;
+  display:-webkit-flex;
   justify-content: center;
   width:100%;
   height:auto;
@@ -99,11 +101,13 @@ body {
   height:auto;
   padding:0 0.3rem;
   display: flex;
+  display:-webkit-flex;
   justify-content: center;
   align-items: center;
 }
 .jp-box .quan{
   display: flex;
+  display:-webkit-flex;
   justify-content:center;
   align-items: center;
   margin:0.1rem 0.3rem;

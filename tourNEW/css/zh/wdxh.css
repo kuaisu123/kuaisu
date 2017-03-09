@@ -4,7 +4,10 @@ html,body{
 }
 body{
     display: flex;
+    display:-webkit-flex;
     flex-direction:column;
+    -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
 }
 section{
     flex-grow:1;
@@ -25,6 +28,7 @@ header span{
     height: 100%;
     margin: 0 auto;
     display: flex;
+    display:-webkit-flex;
     width: 3.5rem;
     align-items: center;
     justify-content: space-around;
@@ -70,9 +74,12 @@ header a{
     height: 100%;
     color: #fff;
     display: flex;
+    display:-webkit-flex;
     box-sizing: border-box;
     padding: 0.44rem 0 0.73rem 0 ;
     flex-direction: column;
+    -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
     justify-content: space-between;
     align-items: center;
     background: no-repeat center center /cover;

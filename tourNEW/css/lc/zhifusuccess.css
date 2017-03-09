@@ -21,6 +21,7 @@ body {
   height: .88rem;
   margin: 0 auto;
   display: flex;
+  display:-webkit-flex;
   flex: none;
   justify-content: center;
   align-items: center;
@@ -82,6 +83,7 @@ body {
   left: 0;
   top: 8rem;
   display: flex;
+  display:-webkit-flex;
   padding: 0 1rem;
   justify-content: space-between;
 }
