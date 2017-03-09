@@ -371,14 +371,14 @@ html.over body {
 	padding: 0.16rem 0 0 .16rem;
 }
 .center-box{
-	width: 100%;
+	width: auto;
 	height: 2.2rem;
 	display: flex;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .center-box .items{
-	width: 2.2rem;
-	height: 2.2rem;
+	width: 2.2rem!important;
+	height: 2.2rem!important;
 	flex: 0 0 auto;
 	overflow: hidden;
 	margin-right: .16rem;
@@ -508,6 +508,33 @@ html.over body {
 	transform: rotate(45deg);
 }
 
+/*swiper*/
+.swiper-container {
+/*    width: 100%;
+    height: 300px;
+    margin: 20px auto;*/
+    overflow: hidden;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
 
 
 
@@ -522,7 +549,7 @@ html.over body {
 	height: 100%;
 	z-index: 999;
 	background: rgba(0,0,0,0.8);
-	display: none;
+	/*display: none;*/
 }
 .boot>div{
 	display: none;

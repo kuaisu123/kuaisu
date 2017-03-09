@@ -135,7 +135,7 @@ body,html{
 	/*align-items:center;*/
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: -0.13rem;
 }
 .zyy-stitle .zyy-right span{
 	height: 100%;
@@ -166,19 +166,30 @@ body,html{
 .zyy-stitle .zyy-right .spanon a{
 	border: 1px solid #fff;
 	width: 1.16rem;
-	height: .53rem;
+	height: .58rem;
 	/*display: block;*/
 	border-radius: .28rem;
 	position: relative;
 }
 .zyy-zero{
-	width: .44rem;
-	height: .44rem;
+	width: .5rem;
+	height: .5rem;
 	border-radius: 50%;
 	background: #fff;
 	position: absolute;
 	left: .02rem;
 	top: .02rem;
+	transition:all .4s;
+	/*0.56rem  滑动右侧的left  值*/
+}
+.zyy-on{
+	color: #fff;
+	font-size: .19rem;
+	position: absolute;
+	left: .03rem;
+	top: 23%;
+	width: auto;
+	height: auto;
 }
 .zyy-off{
 	color: #fff;
@@ -207,11 +218,6 @@ body,html{
 	align-items:center;	
 }
 .zyy-sure p a{
-	display: block;
-	width: 100%;
-	height: 100%;
-	line-height: 0.96rem;
-	text-align: center;
 	font-size: .36rem;
 	font-weight: 500;
 	color: #fff;

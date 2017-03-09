@@ -27,56 +27,47 @@ more.on('click',function(){
 	flag=!flag;
 })
 
-// 个人游记分享事件
-var enjoy_mask=$(".zyy-enjoy-mask");
-var enjoy_box=$(".zyy-enjoy-box");
-var onjoyclc=$(".header-enjoy");
-var boxs=$(".sectionsb");
-var close = $(".zyy-close");
-var Hh=boxs.height()+88;
-// console.log(Hh)
-var flagg=false;
-onjoyclc.on('click',function(){
-	enjoy_mask.addClass("zyy-enjoy-mask-active");
-	enjoy_box.addClass("zyy-enjoy-box-active");
-	html.addClass("over");
-	enjoy_mask.css({height:Hh})
-})
-close.on('click',function(){
-	enjoy_mask.removeClass("zyy-enjoy-mask-active");
-	enjoy_box.removeClass("zyy-enjoy-box-active");
-	html.removeClass("over");
-	enjoy_mask.css({height:0})
-})
+// 热门游记 首页滑动效果
+
+// var content_box=$(".content-box");
+// content_box.on("mousedown",function (e){
+// 	var ev = e||window.event;
+// 	var dy= ev.clientY;
+// 	var y;
+// 	content_box.on("mousemove",function (e){
+// 		var ev = e||window.event;
+// 		var my = ev.clientY;
+// 		y=my-dy;
+// 	})
+// 	content_box.on("mouseup",function (e){
+		
+// 	})
+
+// })
 
 
 
 // 个人中心引导页js
 //引号页效果
+var bootBox = $(".boot");
+// console.log(bootBox)
+var boot = $(".boot>div");
+var bNum = 0;
+var bLen = boot.length;
 
-var yindaoTwo = sessionStorage.getItem("yindaoTwo");
+boot.eq(0).show();
 
-if(!yindaoTwo){
-	var bootBox = $(".boot");
-	bootBox.show();
-	sessionStorage.setItem("yindaoTwo",true);
-	var boot = $(".boot>div");
-	var bNum = 0;
-	var bLen = boot.length;
-
-	boot.eq(0).show();
-
-	$(document).click(function(){
-		if(bNum<bLen){
-			boot.eq(bNum).hide();
-			bNum++;
-			if(bNum!=bLen){
-				boot.eq(bNum).show();
-			}else{
-				bootBox.hide()
-			}
-			
+$(document).click(function(){
+	if(bNum<bLen){
+		boot.eq(bNum).hide();
+		bNum++;
+		if(bNum!=bLen){
+			boot.eq(bNum).show();
+		}else{
+			bootBox.hide()
 		}
-	})
+		
+	}
+})
 
-}
+

@@ -12,6 +12,20 @@ body,html{
 	box-sizing:border-box;
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */  
+    color: #fff;  
+}  
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */  
+   color: #fff;  
+   opacity:  1;  
+}  
+::-moz-placeholder { /* Mozilla Firefox 19+ */  
+   color: #fff;  
+   opacity:  1;  
+}  
+:-ms-input-placeholder { /* Internet Explorer 10+ */  
+   color: #fff;  
+}  
 
 @font-face {
   font-family: 'iconfont';
@@ -167,6 +181,17 @@ body,html{
 .content-right a{
 	color: #fff;
 }
+.content-right a input{
+	/*background-image:rgba(0,0,0,0);*/
+	width: 1.8rem;
+	padding: 0;
+	background: transparent;
+	border: none;
+	color: #fff;
+}
+.content-right a input:-webkit-input-placeholder{
+    color: #fff;
+}
 .content-right .zyy-xx{
 	width: .89rem;
 	height: .02rem;
@@ -290,7 +315,7 @@ body,html{
 	height: 100%;
 	z-index: 999;
 	background: rgba(0,0,0,0.8);
-	display: none;
+	/*display: none;*/
 }
 .boot>div{
 	display: none;
@@ -361,12 +386,10 @@ body,html{
 	top: 0.5rem;
 }
 .boot5>img{
-	width: 4.4rem;
 	right: 0.3rem;
 	top: -0.45rem;
 }
 .boot6>img{
-	width: 3.1rem;
 	right: -0.1rem;
 	top: 0.45rem;
 }

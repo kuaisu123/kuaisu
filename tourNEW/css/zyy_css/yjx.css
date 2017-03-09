@@ -11,6 +11,9 @@ body,html{
 *{
 	box-sizing:border-box;
 }
+i{
+	font-family: normal;
+}
 
 /*header*/
 .header-box{
@@ -152,7 +155,7 @@ body,html{
 }
  .zyy-banner-top .zyy-topl>a>img{
 	width: 0.54rem;
-	height: .48rem;
+	/*height: .48rem;*/
 }
 .zyy-banner-top .zyy-topc{
 	display: flex;
@@ -189,7 +192,7 @@ body,html{
 }
 .zyy-banner-top .zyy-topr>a>img{
 	width: .54rem;
-	height: .48rem;
+	/*height: .48rem;*/
 }
 /*banner下面关注/私信*/
 .zyy-banner-down{
@@ -207,20 +210,14 @@ body,html{
 	padding:0.05rem;
 	font-size: 0px;
 }
-.zyy-banner-down>div>a{
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-.zyy-banner-down>div img{
+.zyy-banner-down>div>img{
 	width: 0.28rem;
 	vertical-align: middle;
 	margin-right: 0.1rem;
 }
-.zyy-banner-down>div span{
+.zyy-banner-down>div>span{
 	font-size: 0.24rem;
 	vertical-align: middle;
-	color: black;
 }
 
 /*banner结束*/
