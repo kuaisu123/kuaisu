@@ -1,0 +1,109 @@
+body{
+	/*font-size: 16px;*/
+	display: flex;
+	flex-direction:column;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+*{
+	box-sizing:border-box;
+}
+
+/*header*/
+.header-box{
+	flex:0 0 auto;
+	height: 0.88rem;
+	width: 100%;
+	background: #3867FA;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	position: relative;
+}
+.header-dian{
+	height: 100%;
+	display: flex;
+	align-items:center;
+}
+.header-dian .d1{
+	width: .03rem;
+	height: .03rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: .12rem;
+}
+.header-dian .d2{
+	width: .05rem;
+	height: .05rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: .14rem;
+}
+.header-dian .d3{
+	width: .07rem;
+	height: .07rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: .26rem;
+}
+.header-dian .d4{
+	margin-right: .14rem;
+}
+.header-dian .d5{
+	margin-right: .12rem;
+}
+.header-dian .d6{
+	margin-right: 0;
+}
+.header-dian p{
+	font-size: .36rem;
+	color: #FFFFFF;
+	margin-right: .2rem;
+}
+.header-back{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: .89rem;
+	height: .89rem;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.header-b{
+	width: .67rem;
+	height: .67rem;
+	background: url(../../images/zyy_images/zyy-tui.png)center center/cover ;
+}
+
+
+
+/*section-box*/
+.section-box{
+	flex: 1 0 auto;
+	background: url(../../images/zyy_images/zyy-success.png)center center/cover;
+	position: relative;
+}
+.section-box .title{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	color: #396CFF;
+	font-size: .36rem;
+	font-weight: 500;
+	position: absolute;
+	left: 0;
+	top: 1rem;
+}
+.zyy-main{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	color: #C5C5C5;
+	font-size: .3rem;
+	position: absolute;
+	left: 0;
+	bottom: 2.77rem;
+}

@@ -1,0 +1,342 @@
+body{
+    font-size:16px;
+    color:#fff;
+    background: url("../../images/yws_img/map_03.png");
+}
+*{
+    box-sizing: border-box;
+}
+/*导航栏开始*/
+header{
+    width:100%;
+    height: 0.88rem;
+    background: #3867fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+    left:0;top:0;
+    z-index: 999;
+}
+header .left{
+    width: 1.4rem;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.22rem;
+}
+header .left img{
+    width:50%;
+}
+header .middle{
+    width: 2rem;
+    height:100%;
+    font-size: 0.34rem;
+    color:#fff;
+    text-align: center;
+    line-height: 0.88rem;
+    background: url("../../images/yws_img/point.png") no-repeat center center /contain;
+}
+header .right{
+    width: 1.3rem;
+    height:100%;
+    padding-right: 0.24rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*导航栏结束*/
+/*内容开始*/
+section{
+    width:100%;
+    height:auto;
+    padding: 0 0.3rem;
+    margin-top:0.88rem;
+}
+.hide{
+    width:6.86rem;
+    height:1.12rem;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0 0 0.12rem 0.12rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.27);
+}
+.hide .list{
+    width: 0.8rem;
+    height:1.12rem;
+    margin: 0 0.42rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #3867fa;
+    font-size: 0.24rem;
+}
+.hide .list div{
+    width:0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    margin-bottom: 0.1rem;
+    background: url("../../images/yws_img/firend_03.png") no-repeat center center/60%;
+    background-color:#4254ff;
+    flex:0 0 auto;
+}
+.hide .list .yueban{
+    background: url("../../images/yws_img/friends_03.png") no-repeat center center/60%;
+    background-color:#4254ff;
+}
+.hide .list .youji{
+    background: url("../../images/yws_img/youji.png") no-repeat center center/60%;
+    background-color:#4254ff;
+}
+/*搜索附近开始*/
+.searchbox{
+    width:100%;
+    height:10.1rem;
+    padding: 0 0.24rem;
+    position: relative;
+}
+.searchbox .search{
+    width:5.6rem;
+    height:5.6rem;
+    border-radius: 50%;
+    background: rgba(252, 253, 255, 0.32);
+    position: absolute;
+    bottom: 1.8rem;
+    left:0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px 5px rgba(13, 67, 113, 0.51);
+}
+.searchbox .search .search1{
+    width:4rem;
+    height:4rem;
+    border-radius: 50%;
+    background: rgba(253, 254, 254, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px 5px rgba(13, 67, 113, 0.51);
+}
+.searchbox .search .search1 .search2{
+    width:2.6rem;
+    height:2.6rem;
+    border-radius: 50%;
+    background: rgba(253, 254, 255, 0.42);
+    text-align: center;
+    line-height: 2.6rem;
+    font-size: 0.3rem;
+    color:#4254ff;
+    box-shadow: 0 0 30px 5px rgba(13, 67, 113, 0.51);
+}
+.searchbox .person{
+    position: absolute;
+}
+.searchbox .person1{
+    width:0.8rem;
+    height:0.8rem;
+    border-radius: 50%;
+    right:1.05rem;
+    bottom: 4rem;
+    background: url("../../images/yws_img/woman.png")no-repeat center center/cover;
+}
+.searchbox .person2{
+    width:1rem;
+    height:1rem;
+    border-radius: 50%;
+    right:3.05rem;
+    top: 2.3rem;
+    background: url("../../images/yws_img/woman.png")no-repeat center center/cover;
+}
+.searchbox .person3{
+    width:0.6rem;
+    height:0.6rem;
+    border-radius: 50%;
+    left:1.05rem;
+    top: 2rem;
+    background: url("../../images/yws_img/woman.png")no-repeat center center/cover;
+}
+.searchbox .person4{
+    width:0.5rem;
+    height:0.5rem;
+    border-radius: 50%;
+    left:2.05rem;
+    top: 4rem;
+    background: url("../../images/yws_img/woman.png")no-repeat center center/cover;
+}
+.searchbox .person5{
+    width:0.5rem;
+    height:0.5rem;
+    border-radius: 50%;
+    left:2.05rem;
+    bottom: 2rem;
+    background: url("../../images/yws_img/woman.png")no-repeat center center/cover;
+}
+.searchbox .person .inner{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.searchbox .person .inner a{
+    display: block;
+    position: absolute;
+    width:0.5rem;
+    height:0.5rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 0.5rem;
+    color: #fff;
+}
+.searchbox .person .inner a:first-child{
+    background: #4292ff;
+    left:-0.3rem;
+    top:-0.4rem;
+}
+.searchbox .person .inner a:nth-child(2){
+    background: #62dedd;
+    left:0.3rem;
+    top:-0.6rem;
+}
+.searchbox .person .inner a:last-child{
+    background: #7f82ff;
+    left:0.9rem;
+    top:-0.4rem;
+}
+.searchbox .right{
+    position: absolute;
+    width:0.54rem;
+    height: 1.9rem;
+    right:0.5rem;
+    top:1.8rem;
+    display: flex;
+    flex-direction: column;
+}
+.searchbox .right a{
+    width:0.54rem;
+    height:0.54rem;
+    border-radius: 50%;
+}
+.searchbox .right a:nth-child(2){
+    margin:0.2rem 0;
+    background: url("../../images/yws_img/bigger_03.png")no-repeat center center/60%;
+    background-color: #fff;
+}
+.searchbox .right a:last-child{
+    background: url("../../images/yws_img/smaller.png")no-repeat center center/60%;
+    background-color: #fff;
+}
+.searchbox .right a:first-child{
+    background: url("../../images/yws_img/talk.png")no-repeat center center/60%;
+    background-color: #fff;
+}
+.searchbox .left{
+    width:1.1rem;
+    height:1.8rem;
+    position: absolute;
+    bottom: 0;
+}
+.searchbox .left .zhen{
+    width:1.1rem;
+    height:1.1rem;
+    border-radius: 50%;
+    background: url("../../images/yws_img/zhinanzhen.png")no-repeat center center;
+    background-color: #fff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+.searchbox .left .zhen span{
+    position: absolute;
+    top:-0.3rem;
+    left:0.4rem;
+    color:#4254ff;
+}
+.bottom{
+    width:100%;
+    height:1.73rem;
+    background: #fff;
+    border-radius: 0.12rem 0.12rem 0 0;
+    padding: 0 0.14rem;
+}
+.bottom a{
+    width:100%;
+    height:50%;
+    display: flex;
+    align-items: center;
+    color:#5367ff;
+}
+.bottom a i{
+    margin:0 0.4rem 0 0.1rem;
+    width:0.35rem;
+    height:0.35rem;
+    border-radius:50%;
+    background: url("../../images/yws_img/friends_03.png")no-repeat center center/60%;
+    background-color: #5367ff;
+}
+.bottom a span{
+    font-size: 0.21rem;
+}
+.bottom a:first-child{
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+}
+.bottom a:first-child p{
+    width:0.07rem;
+    height:0.96rem;
+    border-radius: 0.03rem;
+    background: #5367ff;
+    position: absolute;
+    right:-0.14rem;
+    top:0.4rem;
+}
+.bottom a:last-child i{
+    background: url("../../images/yws_img/note.png")no-repeat center center/60%;
+    background-color: #5367ff;
+}
+/*内容结束*/
+.mask{
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.91);
+    position: absolute;
+    left:0;
+    top:0;
+}
+.mask .notice{
+    width:4.9rem;
+    height:2.76rem;
+    border:0.12rem;
+    background: url("../../images/yws_img/background1_03.png")no-repeat center bottom/contain;
+    margin:4rem auto;
+    overflow: hidden;
+    text-align: center;
+    line-height: 2.46rem;
+    position: relative;
+}
+.mask .notice span{
+    font-size: 0.22rem;
+    color: #2476ff;
+}
+.mask .notice .close{
+    width:0.5rem;
+    height:0.5rem;
+    background: url("../../images/yws_img/delete_03.png")no-repeat center center/60%;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    position: absolute;
+    right:-0.1rem;top:-0.1rem;
+}
+.mask .people{
+    width:1.26rem;
+    height:1.26rem;
+    border-radius: 50%;
+    border:0.03rem solid #fff;
+    background: url("../../images/yws_img/woman.png")no-repeat center center/cover;
+    position: absolute;
+    top:3.42rem;
+    left:3rem;
+}

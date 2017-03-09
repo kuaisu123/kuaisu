@@ -1,0 +1,243 @@
+
+body{
+	font-size: 16px;
+	display: flex;
+	flex-direction:column;
+	background: #F5F5F5;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+*{
+	box-sizing:border-box;
+}
+
+/*header*/
+.header-box{
+	flex:0 0 auto;
+	height: 0.88rem;
+	width: 100%;
+	background: #3867FA;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	position: relative;
+}
+.header-dian{
+	height: 100%;
+	display: flex;
+	align-items:center;
+}
+.header-dian .d1{
+	width: .03rem;
+	height: .03rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: .12rem;
+}
+.header-dian .d2{
+	width: .05rem;
+	height: .05rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: .14rem;
+}
+.header-dian .d3{
+	width: .07rem;
+	height: .07rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: .26rem;
+}
+.header-dian .d4{
+	margin-right: .14rem;
+}
+.header-dian .d5{
+	margin-right: .12rem;
+}
+.header-dian .d6{
+	margin-right: 0;
+}
+.header-dian p{
+	font-size: .36rem;
+	color: #FFFFFF;
+	margin-right: .2rem;
+}
+.header-back{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: .89rem;
+	height: .89rem;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.header-b{
+	width: .67rem;
+	height: .67rem;
+	background: url(../../images/zyy_images/zyy-tui.png)center center/cover ;
+}
+.header-right{
+	width: 2rem;
+	height: 100%;
+	position: absolute;
+	right: .23rem;
+	top: 0;
+}
+.header-right ul{
+	height: 100%;
+	float: right;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.header-right ul li{
+	width: .42rem;
+	height: .42rem;
+	background: #fff;
+	border-radius: 50%;
+	color: #A987FB;
+	line-height: .47rem;
+	text-align: center;
+	font-size: .18rem;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.header-right ul li a{
+	display: block;
+	background: url(../../images/zyy_images/zyy-dj.png)center center/cover;
+	width: .24rem;
+	height: .17rem;
+}
+
+
+
+/*sections-box*/
+.sections-box{
+	flex:1 0 auto;
+	padding: .22rem .32rem 0; 
+}
+.zyy-bjcon{
+	height: 1.91rem;
+	width: 100%;
+	padding-bottom: .23rem;
+	display: flex;
+	background: #fff;
+}
+.zyy-bjcon .img{
+	height: 100%;
+	flex:1 0 auto;
+	overflow: hidden;
+	border-radius: .1rem;
+}
+.zyy-bjcon .img img{
+	height: 100%;
+	display: block;
+	margin-left: -15%;
+}
+.zyy-wzms{
+	width: 5.08rem;
+	height: 100%;
+	box-sizing:border-box;
+}
+.zyy-wzms textarea{
+	font-size: .24rem;
+	color: #666666;
+	line-height: .32rem;
+	display: block;
+	border: 0;
+	resize:none;
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	width: 4.6rem;
+	height: 100%;
+	text-overflow:ellipsis; 
+	overflow:auto;
+}
+.zyy-times{
+	width: 100%;
+	height: .32rem;
+	background: #F8F8F8;
+	display: flex;
+}
+.zyy-times .time1{
+	width: 50%;
+	position: relative;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.zyy-times .time1:nth-child(1){
+	border-right:1px solid #D2D2D2;
+}
+.zyy-times .time1 span{
+	font-size: .24rem;
+	color: #333333;
+}
+.zyy-times .time1 p{
+	position: absolute;
+	right: .21rem;
+	top: .07rem;
+	background: url(../../images/zyy_images/zyy-dy.png)center center/cover;
+	width: .12rem;
+	height: .2rem;
+}
+.zyy-ctitle{
+	height: .76rem;
+	width: 100%;
+	margin-top: .23rem;
+	background: #fff;
+	padding-left: .21rem; 
+	padding-right: .13rem; 
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.zyy-ctitle p{
+	font-size: .26rem;
+	color: #333333;
+}
+.zyy-ctitle div{
+	width: .36rem;
+	height: .36rem;
+	background: #3867FA;
+	border-radius: 50%;
+	text-align: center;
+	line-height: .36rem;
+	color: #fff;
+	transform: rotate(45deg);
+}
+.zyy-map{
+	width: 100%;
+	height: 2.76rem;
+	box-shadow: 0 0 15px 5px #f1f1f1;
+	margin-top: .26rem;
+}
+.zyy-map img{
+	width: 100%;
+}
+.zyy-mores{
+	width: 100%;
+	height: .5rem;
+	display: flex;
+	justify-content:space-between;
+	margin-top: .2rem;
+}
+.zyy-mores p{
+	line-height: .5rem;
+}
+.zyy-mores p img{
+	display: block;
+	margin-right: .2rem;
+	width: .51rem;
+	height: .51rem;
+	float: left;
+}
+.zyy-mores p span{
+	color: #A3A3A3;
+	font-size: .28rem;
+}

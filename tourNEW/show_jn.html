@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta name="viewport" content="width = device-width,initial-scale = 1.0,maximum-scale = 1.0,user-scalable = 0"/>
+	<title>平遥古城</title>
+	<link rel="stylesheet" href="css/zh/show_jn.css">
+</head>
+<body>
+
+<!--导航栏 开始-->
+<header class="header">
+	<a href="list_jn.html"></a>
+     <span><i></i><i></i><i></i>晋<i></i><i></i><i></i></span>
+    <a href=""></a>
+</header>
+<!--导航栏 结束-->
+
+
+<!-- 内容 开始 -->
+<div class="main">
+	<div class="mask">
+		<h1>平遥古城</h1>
+		<h2>见证历史建筑的奇迹</h2>
+		<div class="jn-con">
+			<div style="background:url(images/zh/tour1.png) no-repeat center center/cover" class="thumb">
+				<div class="xing"></div>
+			</div>
+			<h1>印象</h1>
+			<img src="images/zh/list-line2.png" alt="">
+			<p>
+				古色的一砖一瓦印刻历史辉煌<br>
+			    教堂钟声讲述信仰故事<br>
+			        来看晋商的精神
+			</p>	
+		</div>
+		<div class="jn-down">
+		</div>
+		<div class="jn-down1">
+		</div>
+		<a class="tansuo" href="">
+			<span></span>
+			探索
+			<span></span>
+		</a>
+	</div>
+</div>
+<!-- 内容 结束 -->
+
+
+
+
+<script src="js/rem.js"></script>
+<script src="js/touch-0.2.14.min.js"></script>
+<script>
+	var xing = document.querySelector(".xing");
+	var flag = true;
+	touch.on(xing,"tap",function(){
+		if(flag){
+			xing.style.backgroundImage = "url(images/zh/xing1.png)";
+		}else{
+			xing.style.backgroundImage = "url(images/zh/xing2.png)";
+		}
+		flag = !flag;
+	})
+</script>
+</body>
+</html>

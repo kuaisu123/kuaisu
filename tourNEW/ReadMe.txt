@@ -1,0 +1,1 @@
+网站的入口是lc_welcom.html

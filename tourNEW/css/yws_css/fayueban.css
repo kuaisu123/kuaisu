@@ -1,0 +1,119 @@
+body{
+    font-size:16px;
+}
+*{
+    box-sizing: border-box;
+}
+/*导航栏开始*/
+header{
+    width:100%;
+    height: 0.88rem;
+    background: #3867fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+    left:0;top:0;
+    z-index: 999;
+}
+header .left{
+    width: 1.4rem;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.22rem;
+}
+header .left img{
+    width:50%;
+}
+header .middle{
+    width: 2rem;
+    height:100%;
+    font-size: 0.34rem;
+    color:#fff;
+    text-align: center;
+    line-height: 0.88rem;
+    background: url("../../images/yws_img/point.png") no-repeat center center /contain;
+}
+header .right{
+    width: 0.42rem;
+    height:0.42rem;
+    border-radius: 50%;
+    background: url("../../images/yws_img/search.png") no-repeat center center /contain;
+    background-color: #fff;
+    padding-right: 0.24rem;
+    display: flex;
+    margin-right: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+/*导航栏结束*/
+/*内容开始*/
+section{
+    width:100%;
+    height:auto;
+    padding: 0.24rem;
+    margin-top:0.88rem;
+}
+.time{
+    width:100%;
+    height:0.88rem;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0.12rem;
+    padding: 0.26rem;
+    color: #666;
+}
+.descript{
+    display: block;
+    border: 0;
+    width:100%;
+    height:2.24rem;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.09);
+    border-radius: 0.12rem;
+    margin-top: 0.24rem;
+    padding: 0.26rem;
+    color: #999;
+    resize:none;
+}
+.picture{
+    width:1.52rem;
+    height:1.42rem;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.09);
+    border-radius: 0.12rem;
+    margin-top: 0.24rem;
+    padding: 0.26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.picture img{
+    width: 0.65rem;
+}
+.picture span{
+    margin-top: 0.13rem;
+    color: #d8d8d8;
+    font-size: 0.22rem;
+}
+.localtion{
+    width:1.56rem;
+    height:0.43rem;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.09);
+    border-radius: 0.12rem;
+    margin-top: 0.24rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.localtion img{
+    height:0.33rem;
+}
+.localtion  span{
+    color: #999;
+    font-size: 0.22rem;
+}
+.background{
+    width:100%;
+}
