@@ -1,0 +1,180 @@
+/*头部*/
+header{
+    height: 0.88rem;
+    background: #3867FA;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    padding: 0 0.24rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .more{
+    height: 0.52rem;
+    width: 0.42rem;
+    background: url(../../images/zh/more.png) no-repeat center center/contain ;
+}
+header .input-box{
+    width: 4rem;
+    height: 0.42rem;
+    padding: 0;
+    position: relative;
+    line-height: 0;
+}
+header .input-box input{
+    border: none;
+    height: 100%;
+    outline: none;
+    border-radius: 0.21rem;
+    box-sizing: border-box;
+    padding-left: 0.43rem;
+    width: 100%;
+    background: #4F79FA;
+    margin: 0;
+    color: #6B8FFF;
+}
+header .input-box a:nth-of-type(1){
+    top:0;
+    bottom: 0;
+    margin: auto;
+    left: 0.11rem;
+    position: absolute;
+    width: 0.24rem;
+    height: 0.24rem;
+    background: url(../../images/zh/search.png) no-repeat center center/cover;
+}
+header .input-box a:nth-of-type(2){
+    top:0;
+    bottom: 0;
+    margin: auto;
+    right: 0.11rem;
+    position: absolute;
+    width: 0.16rem;
+    height: 0.26rem;
+    background: url(../../images/zh/Micro.png) no-repeat center center/cover;
+}
+header .address{
+    width: 1.1rem;
+    height: 0.33rem;
+    font-size: 11px;
+    color: #fff;
+    position: relative;
+    padding-left:0.2rem ;
+}
+header .address:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 0.26rem;
+    height: 0.31rem;
+    background: url(../../images/zh/location3.png) no-repeat center center/cover;
+}
+/*酒店列表*/
+.hotel-list{
+    padding: 0 0.32rem;
+}
+.hotel-list .hotel{
+    width: 100%;
+    border-radius: 0.2rem;
+    height: 5.42rem;
+    box-sizing: border-box;
+    padding: 0.26rem;
+    margin-top: 0.32rem;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,.3);
+}
+.hotel-list .hotel .title{
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+    color: #333333;
+}
+.hotel-list .hotel .title .star-box{
+    height: 0.27rem;
+    font-size: 0;
+}
+.hotel-list .hotel .title .star-box img{
+    height: 100%;
+}
+.hotel-list .hotel .address{
+    font-size: 11px;
+    height: 0.31rem;
+    color: #999999;
+    margin-top: 0.25rem;
+}
+.hotel-list .hotel .address img{
+    height: 100%;
+    vertical-align: middle;
+}
+.hotel-list .hotel .address span:nth-of-type(1){
+    margin-right:0.18rem;
+}
+.hotel-list .hotel .address span b{
+    font-weight: normal;
+}
+.hotel-list .hotel .price{
+    margin-top: 0.25rem;
+    font-size: 9px;
+    color: #FF0000;
+}
+.hotel-list .hotel-img{
+    margin-top: 0.25rem;
+}
+.hotel-list .hotel-img a{
+    width: 3.02rem;
+    height: 2.32rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.hotel-list .hotel-img a img{
+    width: 100%;
+    height: 100%;
+}
+.hotel-list .hotel-img a:nth-of-type(1){
+   float: left;
+}
+.hotel-list .hotel-img a:nth-of-type(2){
+   float: right;
+}
+.hotel-list .review{
+    display: flex;
+    text-align: right;
+    height: 0.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0.2rem;
+}
+.hotel-list .review span{
+    font-size: 8px;
+    color: #999999;
+    align-self: flex-end;
+}
+.hotel-list .review a{
+    width: 0.43rem;
+    height: 0.43rem;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 3px 5px 0px rgba(0,0,0,.2);
+    font-size: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0.43rem;
+    position: relative;
+    margin: 0 0.2rem;
+}
+.hotel-list .review a img{
+    width: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}

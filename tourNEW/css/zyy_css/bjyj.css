@@ -1,0 +1,372 @@
+
+body{
+	font-size: 16px;
+	display: flex;
+	flex-direction:column;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+*{
+	box-sizing:border-box;
+}
+
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../font/iconfont.eot');
+  src: url('../../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../../font/iconfont.woff') format('woff'),
+  url('../../font/iconfont.ttf') format('truetype'),
+  url('../../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*header*/
+.header-box{
+	flex:0 0 auto;
+	height: 0.88rem;
+	width: 100%;
+	background: #3867FA;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	position: relative;
+}
+.header-dian{
+	height: 100%;
+	display: flex;
+	align-items:center;
+}
+.header-dian .d1{
+	width: .03rem;
+	height: .03rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: .12rem;
+}
+.header-dian .d2{
+	width: .05rem;
+	height: .05rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: .14rem;
+}
+.header-dian .d3{
+	width: .07rem;
+	height: .07rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: .26rem;
+}
+.header-dian .d4{
+	margin-right: .14rem;
+}
+.header-dian .d5{
+	margin-right: .12rem;
+}
+.header-dian .d6{
+	margin-right: 0;
+}
+.header-dian p{
+	font-size: .36rem;
+	color: #FFFFFF;
+	margin-right: .2rem;
+}
+.header-back{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: .89rem;
+	height: .89rem;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.header-b{
+	width: .67rem;
+	height: .67rem;
+	background: url(../../images/zyy_images/zyy-tui.png)center center/cover ;
+}
+.header-right{
+	width: 2rem;
+	height: 100%;
+	position: absolute;
+	right: .23rem;
+	top: 0;
+}
+.header-right ul{
+	height: 100%;
+	float: right;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.header-right ul li{
+	width: .42rem;
+	height: .42rem;
+	background: #fff;
+	border-radius: 50%;
+	color: #A987FB;
+	line-height: .47rem;
+	text-align: center;
+	font-size: .18rem;
+}
+.header-right ul .i1{
+	line-height: .5rem;
+	margin-right: .17rem;
+}
+
+/*content-box*/
+.content-box{
+	flex:1 0 auto;
+}
+.content-img{
+	width: 100%;
+	height: 4.2rem;
+	overflow: hidden;
+	position: relative;
+}
+.content-img img{
+	width: 100%;
+}
+.content-wz{
+	width: 100%;
+	height: .7rem;
+	position: absolute;
+	left: .48rem;
+	bottom: .8rem;
+}
+.zyy-content-box{
+	width: .7rem;
+	height: .7rem;
+	border-radius: 50%;
+	background: #fff;
+	box-sizing:content-box;
+	border: 2px solid #fff;
+	overflow: hidden;
+	float: left;
+	margin-right: .2rem;
+}
+.content-right{
+	width: 80%;
+	height: 100%;
+	float: left;
+	color: #fff;
+}
+.content-right p{
+	width: 100%;
+}
+.content-right a{
+	color: #fff;
+}
+.content-right .zyy-xx{
+	width: .89rem;
+	height: .02rem;
+	background: #fff;
+	margin: .05rem 0;
+	position: relative;
+}
+.content-right .zyy-xx span{
+	display: block;
+	width: .05rem;
+	height: .05rem;
+	position: absolute;
+	left: 50%;
+	top: -.01rem;
+	background: #fff;
+	border-radius: 50%;
+}
+.zyy-map{
+	width: 100%;
+	height: 4rem;
+	padding: .28rem .33rem 0;
+	position: relative;
+}
+.zyy-map .map-img{
+	width: 100%;
+	height: 3.46rem;
+	box-shadow: 0 0 15px 5px #F2F2F2;
+	border-radius: .2rem;
+}
+.zyy-map .map-img img{
+	width: 100%;
+}
+.zyy-map .map-db{
+	position: absolute;
+	left: 2.13rem;
+	top: .88rem;
+	width: .4rem;
+	height: .5rem;
+	background: url(../../images/zyy_images/zyy-db.png)center center/cover;
+}
+.zyy-map .map-db1{
+	position: absolute;
+	left: 1.83rem;
+	top: 1.4rem;
+	width: 1.04rem;
+	height: 1.04rem;
+	border-radius: 50%;
+	overflow: hidden;
+	background: url(../../images/zyy_images/zyy-mmp.png)center center/cover;
+}
+.zyy-map .map-zz{
+	width: 1.16rem;
+	height: .47rem;
+	position: absolute;
+	right: .43rem;
+	top: .4rem;
+	background: #3867FA;
+	border-radius: .1rem;
+	text-align: center;
+	line-height: .47rem;
+}
+.zyy-map .map-zz a{
+	color: #fff;
+	font-size: .24rem;
+}
+
+/*footer*/
+.footer-box{
+	width: 100%;
+	height: .98rem;
+	flex:0 0 auto;
+	background: #2C40FF;
+}
+.footer-box ul{
+	display: flex;
+	height: 100%;
+}
+.footer-box ul li{
+	width: 33.333333%;
+	flex:0 0 auto;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.footer-box ul li a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.footer-box ul li .zyy-wz1{
+	width: .41rem;
+	height: .35rem;
+	background: url(../../images/zyy_images/zyy-aa.png)center center/cover;
+	display: block;
+	margin-right: .19rem;
+}
+.footer-box ul li .zyy-wz3{
+	background: url(../../images/zyy_images/zyy-xj.png)center center/cover;
+}
+.footer-box ul li .zyy-wz4{
+	background: url(../../images/zyy_images/zyy-tp.png)center center/cover;
+}
+.footer-box ul li .zyy-wz2{
+	color: #fff;
+}
+.footer-box ul .active{
+	background: #37BDFF;
+}
+
+
+
+
+/*引导页遮罩效果*/
+.boot{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background: rgba(0,0,0,0.8);
+	display: none;
+}
+.boot>div{
+	display: none;
+	top: 0.18rem;
+}
+.boot img{
+	display: block;
+	width: 4rem;
+	position: absolute;
+}
+.boot1{
+	position: absolute;
+	right: 1.67rem;
+}
+.boot>div>div{
+	float: right;
+	width: 0.46rem;
+	height: 0.46rem;
+	border-radius: 50%;
+	border: 1px dashed white;
+}	
+.boot2{
+	position: absolute;
+	right: 1.07rem;
+}
+.boot3{
+	position: absolute;
+	right: 0.47rem;
+}
+.boot4{
+	position: absolute;
+	left: 0.2rem;
+}
+.boot5{
+	position: absolute;
+	right: 0.8rem;
+}
+.boot6{
+	position: absolute;
+	right: 0.17rem;
+}
+.boot .btn-img{
+	display: block;
+	width: 95%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0.03rem;
+	margin: auto;
+}
+.boot1>img{
+	right: 0.23rem;
+	top: 0.2rem;
+}
+.boot2>img{
+	right: 0.23rem;
+	top: -0.6rem;
+}
+.boot3>img{
+	width: 2rem;
+	right: 0rem;
+	top: 0.6rem;
+}
+.boot4>img{
+	width: 3.2rem;
+	left: -0.1rem;
+	top: 0.5rem;
+}
+.boot5>img{
+	width: 4.4rem;
+	right: 0.3rem;
+	top: -0.45rem;
+}
+.boot6>img{
+	width: 3.1rem;
+	right: -0.1rem;
+	top: 0.45rem;
+}

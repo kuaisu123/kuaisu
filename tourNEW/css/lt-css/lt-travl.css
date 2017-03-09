@@ -1,0 +1,240 @@
+*{
+    font-family: "Microsoft YaHei";
+}
+i{
+    font-style: normal;
+}
+html,body{
+    height:100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+/*搜索头部*/
+header.header{
+    width:100%;
+    height:0.88rem;
+    background: #3867FA;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+header.header .prow{
+    float: left;
+    height:auto;
+    font-size: 0;
+    position: absolute;
+    top:0;
+    left:0.24rem;
+    margin-top:0.23rem;
+}
+header.header .prow img{
+    width:0.44rem;
+}
+
+header.header .center-title{
+    margin: 0 auto;
+    font-size: 14px;
+    color:#fff;
+    line-height: 0.88rem;
+    display: flex;
+    align-items: center;
+}
+header.header .center-title span{
+    margin:0 0.3rem;
+}
+header.header .center-title img{
+    height:0.3rem;
+}
+/*头部结束*/
+section.big{
+    width:100%;
+    overflow: auto;
+    flex-grow: 1;
+    background: url("../../images/lt-images/lt-place-bj.jpg") blue center  0 no-repeat;
+    background-size: 100% 100%;
+}
+section.main .box{
+    width:100%;
+    height:10.13rem;
+    box-sizing: border-box;
+    padding:0 0.72rem;
+    padding-top:0.63rem;
+}
+section.main .box .show-box{
+    width:100%;
+    height:8.6rem;
+    background: #fff;
+    border-radius: 9px;
+    position: relative;
+    overflow: hidden;
+}
+section.main .box .show-box .img-box{
+    width:100%;
+    height:5.92rem;
+    overflow: hidden;
+    border-radius: 9px 9px 0 0;
+    position: relative;
+    border-bottom:2px dotted red;
+}
+section.main .box .show-box .img-box .bj{
+    width:100%;
+}
+section.main .box .show-box .img-box .pos-box{
+    position: absolute;
+    bottom:0;
+    width:90%;
+    left:0.3rem;
+
+}
+section.main .box .show-box .img-box .pos-box img{
+    height:1rem;
+}
+section.main .box .show-box .img-box .pos-box p{
+    position: absolute;
+    top:30%;
+    left:0.5rem;
+    font-size: 12px;
+    color:#fff;
+    width:80%;
+}
+section.main .box .show-box .dw{
+    width:0.8rem;
+    height:0.8rem;
+    position: absolute;
+    bottom:2.3rem;
+    background: #4264ED;
+    z-index: 33;
+    border-radius: 50%;
+}
+section.main .box .show-box .dw:nth-of-type(1){
+     left:-0.4rem;
+    background: #4870F3;
+ }
+section.main .box .show-box .dw:nth-of-type(2){
+    right:-0.4rem;
+}
+section.main .box .show-box .con-box{
+    width:100%;
+    height:2.6rem;
+    border-radius: 0 0 9px 9px;
+}
+section.main .box .show-box .con-box .place{
+    width:100%;
+    padding:0 0.3rem;
+    box-sizing: border-box;
+    font-size: 14px;
+    color:#333;
+    overflow: hidden;
+    margin-top:0.2rem;
+}
+section.main .box .show-box .con-box .place span{
+    float: left;
+}
+section.main .box .show-box .con-box .place .star-box{
+    float: right;
+}
+section.main .box .show-box .con-box .place .star-box img{
+    height:0.2rem;
+}
+section.main .box .show-box .con-box .content{
+    font-size: 12px;
+    color:#999;
+    padding:0 0.3rem;
+    width:3.2rem;
+}
+section.main .box .show-box .con-box .bottom{
+    width:100%;
+    height:1.3rem;
+    box-sizing: border-box;
+    padding:10px 0.3rem;
+    background: url("../../images/lt-images/lu-line.png") center 0.1rem no-repeat;
+    background-size: 90% 93%;
+}
+section.main .box .show-box .con-box .bottom li{
+    font-size: 14px;
+    float: left;
+    width:33.3333%;
+}
+
+section.main .box .show-box .con-box .bottom li a{
+    display: block;
+    width:1.3rem;
+    height:0.4rem;
+    background: #3278FC;
+    text-align: center;
+    color:#fff;
+    line-height: 0.4rem;
+    margin-top:0.1rem;
+    border-radius: 0.2rem;
+    font-size: 12px;
+}
+section.main .box .show-box .con-box .bottom li:nth-of-type(1) img{
+     height:0.42rem;
+     margin-left:0.42rem;
+    float: left;
+ }
+section.main .box .show-box .con-box .bottom li:nth-of-type(1) a{
+    float: left;
+}
+section.main .box .show-box .con-box .bottom li:nth-of-type(2) p{
+    float: left;
+}
+section.main .box .show-box .con-box .bottom li:nth-of-type(2) img{
+    height:0.5rem;
+    float: left;
+    margin-left:0.2rem;
+}
+section.main .box .show-box .con-box .bottom li:nth-of-type(2) span{
+    line-height: 0.5rem;
+    color:#999;
+    font-size: 12px;
+    float: left;
+}
+section.main .box .show-box .con-box .bottom li:nth-of-type(3) a{
+    margin:0.05rem auto;
+}
+    /*热门排序*/
+.hot{
+    color:#fff;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:0.1rem;
+    overflow: hidden;
+}
+.hot img{
+    height:0.2rem;
+}
+.hot span{
+    margin:0 0.1rem;
+}
+.num{
+    display: flex;
+    justify-content: center;
+}
+.num b{
+    display: block;
+    width:0.53rem;
+    height:1px;
+    background:#fff;
+    float: left;
+    margin-top:10px;
+}
+.num span{
+    font-size: 14px;
+    float: left;
+    color:#Fff;
+    margin:0 0.1rem;
+}
+.num span i:nth-of-type(1){
+    font-size: 12px;
+}

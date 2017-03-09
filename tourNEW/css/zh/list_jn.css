@@ -1,0 +1,184 @@
+@import url(../base.css);
+
+body,html{
+	height: 100%;
+}
+body{
+	display: flex;
+	flex-direction:column;
+	font-size: 16px;
+}
+body>*{
+	flex-grow:1;
+}
+/*$header 导航栏 开始*/
+.header{
+	flex-grow:0;
+	flex-shrink:0;
+	width: 100%;
+    height: 0.88rem;
+    background: #3867FA;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+header span{
+    line-height: 0.88rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    width: 3.65rem;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 0px  2px 5px rgba(0,0,0,.5);
+}
+header span i{
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 0.12rem;
+}
+header span i:nth-of-type(1),header span i:nth-of-type(6){
+    width: 0.03rem;
+    height: 0.03rem;
+}
+header span i:nth-of-type(2),header span i:nth-of-type(5){
+    width: 0.05rem;
+    height: 0.05rem;
+}
+header span i:nth-of-type(3),header span i:nth-of-type(4){
+    width: 0.07rem;
+    height: 0.07rem;
+}
+header a{
+    position: absolute;
+    right: 0.24rem;
+    bottom:0.1rem;
+    height: 0.56rem;
+    width: 0.44rem;
+    background:url(../../images/zh/zsearch.png) no-repeat center center/cover;
+}
+
+/*$main 内容 开始*/
+body .main{
+	flex-grow:1;
+	overflow: auto;
+	padding: 0 0.32rem;
+	box-sizing:border-box;
+}
+.jn_list{
+	height: auto;
+	margin: 0 auto;
+}
+.jn_list li{
+	height: 4.52rem;
+	box-shadow: 0 0 5px #ccc;
+	margin-top: 0.25rem;
+	position: relative;
+	overflow: hidden;
+}
+.jn_list li .mask{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	display: flex;
+	color: white;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	transition:transform 0.3s linear;
+}
+.jn_list li .mask h1{
+	font-size: 24px;
+}
+.jn_list li .mask a{
+	display: block;
+	width: 1.7rem;
+	height: 0.54rem;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	line-height: 0.52rem;
+	background: url(../../images/zh/border1.png) no-repeat center center/100%;
+}
+.mask.active{
+	transform:translateX(-0.9rem);
+}
+.jn_show.active{
+	transform:translateX(-0.9rem);
+}
+.jn_show{
+	position: absolute;
+	right: -0.9rem;
+	top: 0;
+	width: 0.9rem;
+	height: 100%;
+	background: #3867FA;
+	display: flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:center;
+	transition:transform 0.3s linear;
+}
+.jn_show a{
+	width: 0.6rem;
+}
+.jn_show a img{
+	width: 0.6rem;
+}
+
+
+
+
+
+
+
+/*$footer 底部 开始*/
+footer{
+	flex-grow:0;
+	flex-shrink:0;
+	height: 0.98rem;
+	background: #003EFF;
+	display: flex;
+	font-size: 12px;
+	justify-content: space-around;
+}
+footer a{
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.04rem;
+}
+footer a i{
+    background: #1850ff;
+    border-radius: 50%;
+    position: relative;
+    width: 0.51rem;
+    height: 0.51rem;
+    box-shadow: 0 5px 2px 0 rgba(0,18,76,.23);
+	position: relative;
+	border: 1px solid white;
+}
+footer a i img{
+	width: 0.32rem;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+footer a.active{
+    color: #333333;
+}
+footer a.active i{
+    background: #000E39;
+}

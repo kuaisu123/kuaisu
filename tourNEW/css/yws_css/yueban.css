@@ -1,0 +1,305 @@
+html,body{
+    height:100%;
+}
+body{
+    font-size:16px;
+    color:#fff;
+    display: flex;
+    flex-direction:column;
+    flex-grow:1;
+}
+*{
+    box-sizing: border-box;
+}
+/*导航栏开始*/
+header{
+    width:100%;
+    height: 0.88rem;
+    background: #3867fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-grow:0;
+    flex-shrink:0;
+}
+header .left{
+    width: 1.6rem;
+    height:100%;
+    padding-left: 0.24rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.22rem;
+    color: #fff;
+}
+header .left img{
+    height:50%;
+}
+header .middle{
+    width: 2rem;
+    height:100%;
+    font-size: 0.34rem;
+    color:#fff;
+    text-align: center;
+    line-height: 0.88rem;
+    background: url("../../images/yws_img/point.png") no-repeat center center /contain;
+}
+header .right{
+    width: 1.3rem;
+    height:100%;
+    padding-right: 0.24rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .right a{
+    width:0.42rem;
+    height:0.42rem;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 10px 30px  2px #3b61ad;
+}
+header .right a:first-child{
+    background: url("../../images/yws_img/position.png")no-repeat center center/80%;
+    background-color: #fff;
+}
+header .right a:last-child{
+    background: url("../../images/yws_img/search.png")no-repeat center center/80%;
+    background-color: #fff;
+}
+/*导航栏结束*/
+/*内容开始*/
+section{
+    height:auto;
+    padding-bottom: 0.5rem;
+    flex-grow:1;
+    overflow: auto;
+}
+/*热门目的地开始*/
+section .hot{
+    width:100%;
+    height:0.8rem;
+    padding-left: 0.3rem;
+    line-height: 0.8rem;
+    text-align: left;
+    font-size: 0.28rem;
+    margin-top: 0.4rem;
+    color:#171717;
+}
+section .hot span{
+    font-weight: 700;
+}
+section .hot i{
+    display: inline-block;
+    width:0.35rem;
+    height:0.03rem;
+    border-radius: 0.03rem;
+    background: #c8e5f5;
+}
+section .hot em{
+    display: inline-block;
+    width:0.03rem;
+    height:0.03rem;
+    border-radius: 0.03rem;
+    background: #c8e5f5;
+}
+section .hot a{
+    display: inline-block;
+    width:0.9rem;  height:0.8rem;
+    color:#3867fa;
+    background: url("../../images/yws_img/nore_03.png")no-repeat center center/contain;
+    float: right;
+    margin-right: 0.3rem;
+}
+section .mudi{
+    width:90%;
+    height:auto;
+    overflow: hidden;
+    position: relative;
+}
+section .mudi .contain{
+    display: flex;
+    align-items: center;
+}
+section .mudi .contain .swiper-slide{
+    margin: 0 0.1rem;
+    border-radius: 0.12rem;
+    width:2.4rem!important;
+    height:3.4rem;
+    box-shadow: 0 0 3px 1px #c8e5f5;
+    overflow: hidden;
+    position: relative;
+}
+section .mudi .contain .list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+section .mudi .contain .list img{
+    height:2.22rem;
+}
+section .mudi .contain .list .address{
+    padding:0.02rem 0.1rem;
+    font-size: 0.24rem;
+    font-weight: 700;
+    color:#000;
+}
+section .mudi .contain .list .title{
+    padding: 0 0.1rem;
+    font-size: 0.19rem;
+    color:#666;
+}
+section .mudi .contain .list .look{
+    margin:0.05rem 0.1rem;
+    padding: 0.05rem 0;
+    font-size: 0.19rem;
+    color:#999;
+    border-top: 1px solid #f1f1f1;
+}
+section .mudi .contain .list .tri{
+    width:0.56rem;
+    height:0.56rem;
+    border-radius: 50%;
+    background: url("../../images/yws_img/trixing.png")no-repeat center 0.12rem/60%;
+    background-color: #fff;
+    position: absolute;
+    right:0.23rem;
+    bottom: 0.95rem;
+    box-shadow: 0 5px 20px 2px rgba(88, 117, 255, 0.58);
+}
+section .mudi .lunbo{
+    width:100%;
+    height:0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .mudi .lunbo li{
+    width: 0.11rem;
+    height:0.11rem;
+    border-radius: 0.05rem;
+    margin: 0 0.05rem;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.29);
+}
+section .mudi .lunbo .active{
+    width:0.26rem;
+}
+/*热门目的地结束*/
+/*旅途中约伴开始*/
+section .tour{
+    width:100%;
+    height:auto;
+    padding: 0 0.3rem;
+    display: flex;
+    justify-content: space-around;
+}
+section .tour .contain{
+    width:47%;
+    height:auto;
+}
+section .tour .contain a{
+    width:100%;
+    display: block;
+    height:auto;
+    border-radius: 0.08rem;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.21);
+    background: #fff;
+    padding: 0 0.16rem;
+    flex: 1 0 auto;
+    margin-top: 0.2rem;
+}
+section .tour .contain a .person{
+    width:100%;
+    height:0.93rem;
+    border-bottom: 1px solid #f4f4f4;
+    display: flex;
+    align-items: center;
+    color:#000;
+}
+section .tour .contain a .person .pic{
+    width:0.7rem;
+    height:0.7rem;
+    border-radius: 50%;
+    border: 0.03rem solid #fff;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.14);
+    background: url("../../images/yws_img/woman.png")no-repeat right top/150%;
+}
+section .tour .contain a .person .detile{
+    margin-left: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+section .tour .contain a .person .detile .name{
+    font-size: 0.26rem;
+    color:#000000;
+}
+section .tour .contain a .person .detile .time{
+    font-size: 0.21rem;
+    color:#999;
+}
+section .tour .contain a .article{
+    padding: 0.05rem 0;
+    color:#666;
+    font-size: 0.22rem;
+    line-height: 1.5;
+    height:auto;
+}
+section .tour .contain a .talk{
+    width:100%;
+    height:0.3rem;
+    line-height: 0.3rem;
+    text-align: right;
+    color: #999;
+    font-size: 0.16rem;
+    background: url("../../images/yws_img/ping_03.png")no-repeat 2.2rem center/9%;
+}
+/*旅途中约伴结束*/
+/*内容结束*/
+
+/*$footer 底部 开始*/
+footer{
+    flex-grow:0;
+    flex-shrink:0;
+    height: 0.98rem;
+    background: #003EFF;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-around;
+}
+footer a{
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.04rem;
+}
+footer a i{
+    background: #1850ff;
+    border-radius: 50%;
+    position: relative;
+    width: 0.51rem;
+    height: 0.51rem;
+    box-shadow: 0 5px 2px 0 rgba(0,18,76,.23);
+    position: relative;
+    border: 1px solid white;
+}
+footer a i img{
+    width: 0.32rem;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+footer a.active{
+    color: #333333;
+}
+footer a.active i{
+    background: #000E39;
+}

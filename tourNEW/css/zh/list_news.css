@@ -1,0 +1,246 @@
+@import url(../base.css);
+
+body,html{
+	height: 100%;
+}
+body{
+	display: flex;
+	flex-direction:column;
+	font-size: 16px;
+}
+body>*{
+	flex-grow:1;
+}
+/*$header 导航栏 开始*/
+.header{
+	flex-grow:0;
+	flex-shrink:0;
+	width: 100%;
+    height: 0.88rem;
+    background: #3867FA;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+header span{
+    line-height: 0.88rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    width: 3.15rem;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 0px  2px 5px rgba(0,0,0,.5);
+}
+header span i{
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 0.12rem;
+}
+header span i:nth-of-type(1),header span i:nth-of-type(6){
+    width: 0.03rem;
+    height: 0.03rem;
+}
+header span i:nth-of-type(2),header span i:nth-of-type(5){
+    width: 0.05rem;
+    height: 0.05rem;
+}
+header span i:nth-of-type(3),header span i:nth-of-type(4){
+    width: 0.07rem;
+    height: 0.07rem;
+}
+header a{
+    position: absolute;
+    right: 0.24rem;
+    bottom:0.1rem;
+    height: 0.56rem;
+    width: 0.44rem;
+    background:url(../../images/zh/zsearch.png) no-repeat center center/100% auto;
+}
+
+/*$main 内容 开始*/
+body .main{
+	flex-grow:1;
+	overflow: auto;
+}
+.main .tab-top{
+	width: 2.9rem;
+	height: 0.7rem;
+	margin: 0.3rem auto 0;
+	border-radius: 0.35rem;
+	position: relative;
+	background: #3867FA;
+	box-shadow: 0 0 6px #D5D4F2;
+	line-height: 0.7rem;
+}
+.main .tab-top li{
+	width: 1.9rem;
+	height: 0.7rem;
+	border-radius: 0.35rem;
+	position: absolute;
+	top: 0;
+	box-sizing:border-box;
+	overflow: hidden;
+}
+.main .tab-top li a{
+	width: 100%;
+	height: 100%;
+	color: white;
+	box-sizing:border-box;
+}
+.main .tab-top li:nth-of-type(1){
+	left: 0;
+	text-align: left;
+	padding-left: 0.2rem;
+}
+.main .tab-top li:nth-of-type(2){
+	right: 0;
+	text-align: right;
+	padding-right: 0.2rem;
+}
+.main .tab-top li.active{
+	background: white;
+	text-align: center;
+	z-index: 5;
+}
+.main .tab-top li.active a{
+	color: #3867FA;
+	padding: 0;
+}
+.tab-box{
+	width: 6.4rem;
+	height: auto;
+	margin: 0.3rem auto 0;
+}
+.tab-box>ul{
+	display: none;
+}
+.tab-box>ul.active{
+	display: block;
+}
+.tab-box li{
+	width: 100%;
+	min-height: 1rem;
+	margin-bottom: 0.2rem;
+	box-shadow: 0 0 5px #ccc;
+	border-radius: 5px;
+	position: relative;
+	box-sizing:border-box;
+	padding-left: 0.8rem;
+	padding-bottom: 0.24rem;
+}
+.dt-thumb{
+	position: absolute;
+	left: -0.2rem;
+	top: -0.3rem;
+	width: 0.8rem;
+	height: 0.8rem;
+	box-shadow: 0 0 5px #ccc;
+	box-sizing:border-box;
+	border: 0.03rem solid white;
+	border-radius: 50%;
+}
+.tab-box li a{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.tab-box li a:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.tab-box li a>h1{
+	color: #343434;
+	font-size: 12px;
+	margin-top: 0.3rem;
+}
+.tab-box li a>h2{
+	color: #343434;
+	font-size: 14px;
+	margin-top: 0.05rem;
+	font-weight: normal;
+}
+.tab-box li .tp{
+	float: left;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 5px;
+	margin-right: 0.2rem;
+	margin-top: 0.26rem;
+}
+.tab-box li .xx:before{
+	display: block;
+	content: "";
+	clear: both;
+}
+.tab-box li .xx{
+	display: block;
+	color: #343434;
+	font-size: 14px;
+}
+.tab-box li .tp2{
+	width: 2.7rem;
+	height: 1.4rem;
+	border-radius: 5px;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+.tab-box li .tp3{
+	float: left;
+	width: 2.55rem;
+	height: 1.4rem;
+	border-radius: 5px;
+	margin-right: 0.12rem;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
+
+/*$footer 底部 开始*/
+footer{
+	flex-grow:0;
+	flex-shrink:0;
+	height: 0.98rem;
+	background: #003EFF;
+	display: flex;
+	font-size: 12px;
+	justify-content: space-around;
+}
+footer a{
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.04rem;
+}
+footer a i{
+    background: #1850ff;
+    border-radius: 50%;
+    position: relative;
+    width: 0.51rem;
+    height: 0.51rem;
+    box-shadow: 0 5px 2px 0 rgba(0,18,76,.23);
+	position: relative;
+	border: 1px solid white;
+}
+footer a i img{
+	width: 0.32rem;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+footer a.active{
+    color: #333333;
+}
+footer a.active i{
+    background: #000E39;
+}

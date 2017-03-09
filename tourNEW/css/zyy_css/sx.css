@@ -1,0 +1,317 @@
+body{
+	display: flex;
+	flex-direction:column;
+	background: url(../../images/zyy_images/zyy-chatb_02.png)center center/cover;
+	position: relative;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+*{
+	box-sizing:border-box;
+}
+
+.clf:before,.clf:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	background: #3867FA;
+	opacity: 0.95;
+	z-index: 1;
+}
+
+
+/*header*/
+
+.header-box{	
+	height: 100%;
+	background: #3867FA;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	position: relative;
+	height: 0.88rem;
+	width: 100%;
+	flex:0 0 auto;
+	z-index: 99999;
+}
+.header-dian{
+	height: 100%;
+	display: flex;
+	align-items:center;
+}
+.header-dian .d1{
+	width: .03rem;
+	height: .03rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: .12rem;
+}
+.header-dian .d2{
+	width: .05rem;
+	height: .05rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: .14rem;
+}
+.header-dian .d3{
+	width: .07rem;
+	height: .07rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-right: .26rem;
+}
+.header-dian .d4{
+	margin-right: .14rem;
+}
+.header-dian .d5{
+	margin-right: .12rem;
+}
+.header-dian .d6{
+	margin-right: 0;
+}
+.header-dian p{
+	font-size: .36rem;
+	color: #FFFFFF;
+	margin-right: .2rem;
+}
+.header-back{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: .89rem;
+	height: .89rem;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.header-b{
+	width: .67rem;
+	height: .67rem;
+	background: url(../../images/zyy_images/zyy-tui.png)center center/cover ;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+/*section-box*/
+.section-box{
+	/*margin-top: .88rem;*/
+	flex: 1 0 auto;
+	position: relative;
+	overflow: auto;
+	
+}
+
+.sexti{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+}
+
+/*聊天内容开始*/
+.zyy-chat{
+	width: 100%;
+	height: auto;
+	padding:0 0.32rem;
+}
+.zyy-chat .zyy-load{
+	width: 100%;
+	height: 1.65rem;
+	display: flex;
+	text-align: center;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+}
+.zyy-chat .zyy-load>img{
+	width: 0.5rem;
+	height: 0.5rem;
+	margin-bottom: 0.18rem;
+}
+.zyy-chat .zyy-load>span{
+	color: #FFFFFF;
+	font-size: 0.24rem;
+	margin-bottom: 0.38rem;
+}
+.zyy-chat .zyy-load>p{
+	color: #FFFFFF;
+	font-size: 0.28rem;
+}
+
+/*聊天详情*/
+.zyy-chat .zyy-chatting{
+	width: 100%;
+	height: auto;
+	margin-top:0.4rem;
+}
+.zyy-chat .zyy-chatting .zyy-tox{
+	width: .88rem;
+	height: .88rem;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	overflow: hidden;
+	margin-right: .28rem;
+}
+.zyy-chat .zyy-chatting .zyy-tox img{
+	height: 100%;
+}
+.zyy-chat .zyy-chatting .zyy-ltp{
+	display: block;
+	width: 4rem;
+	padding: .12rem .15rem;
+	font-size: 0.24rem;
+	padding-left: 0.4rem;
+	text-align: left;
+	display: flex;
+	align-items:center;
+	color: #333333;
+	background: #fff;
+	border-radius: 0 .42rem .42rem .42rem;
+}
+.zyy-border{
+	height: auto;
+	width: auto;
+}
+.zyy-chat .zyy-pm{
+	width: auto;
+	height: 0.3rem;
+	margin-top: .19rem;
+	margin-right: .35rem;
+}
+.zyy-chat .zyy-pmfr{
+	margin-left: .35rem;
+}
+.zyy-chat .zyy-pm .zyy-wz2{
+	width: 0.24rem;
+	height: 0.24rem;
+	background: #ffffff;
+	border-radius: 50%;
+	margin-right: 0.1rem;
+}
+.zyy-chat .zyy-pm .zyy-wz1{
+	font-size: 0.24rem;
+	color: #FFFFFF;
+}
+.zyy-chat .zyy-chatting2{
+	height: auto;
+}
+
+.zyy-chat .zyy-chatting2 .zyy-Img span img{
+	width: 0.8rem;
+	position: absolute;
+	top:0;left:0;right:0;bottom:0;
+	margin:auto;	
+}
+.zyy-Img{
+	width: 4.22rem;
+	height: auto;	
+}
+.zyy-Img .zyy-imags{
+	height: 2.53rem;
+	border-radius: .4rem 0 .4rem .4rem;
+	overflow: hidden;
+	position: relative;
+	background: #fff;
+}
+.zyy-Img .zyy-imags img{
+	width: 100%;
+	display: block;
+}
+
+.zyy-chatting3 .zyy-ltwz .zyy-ltp1{
+	min-height: .98rem;
+	width: 4rem;
+    padding: .12rem .15rem;
+    font-size: 0.24rem;
+    padding-left: 0.4rem;
+    text-align: left;
+    color: #333333;
+    background: #fff;
+    border-radius: 0 .42rem .42rem .42rem;
+}
+.zyy-chatting3 .zyy-ltp1 img{
+	width: .24rem;
+}
+.zyy-chatting3 .zyy-ltp1 .span1{
+	width: auto;
+	height: .53rem;
+	float: left;
+}
+.zyy-chatting3 .zyy-ltp1 .span2{
+	width: auto;
+	height: .53rem;
+	float: right;
+	margin-right: .7rem;
+}
+.zyy-chatting3 .zyy-ltp1 .span2 p{
+	text-align: right;
+}
+.zyy-xiant{
+	width: 93%;
+	margin: 0 auto;
+	background-image:linear-gradient(to right,#fff 0%,#5893FF 100%);
+	height: 4px;
+	float: left;
+	margin-top: .1rem;
+	position: relative;
+}
+.zyy-xiant div{
+	position: absolute;
+	left: 50%;
+	top: -.02rem;
+	width: .09rem;
+	height: .09rem;
+	box-shadow: 0 0 2px 1px #89A5FB;
+	background: #3B69F8;
+}
+
+
+
+
+
+/*底部固定定位*/
+.zyy-fixed{
+	width: 100%;
+	height:0.99rem;
+	flex:0 0 auto;
+	background: #2B67FF;
+	z-index: 9999;
+}
+.zyy-fixed>a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items:center;
+}
+.zyy-fixed>a>img{
+	width: 0.5rem;
+	height: 0.5rem;
+	margin:0 0.24rem;
+}
+.zyy-fixed>a .zyy-last-img{
+	margin-left:-0.12rem;
+}
+.zyy-fixed>a>input{
+	width: 4.94rem;
+	height: 0.5rem;
+	outline: none;
+	border:none;
+	border-radius: 0.3rem;
+}

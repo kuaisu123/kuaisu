@@ -1,0 +1,235 @@
+/*头部*/
+body{
+    background: #F5F5F5;
+}
+header{
+    height: 0.88rem;
+    background: #3867FA;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 9999999999999999;
+}
+header span{
+    line-height: 0.88rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    width: 4rem;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 0px  2px 5px rgba(0,0,0,.5);
+}
+header span b{
+    display: flex;
+    width: 2.2rem;
+    font-weight: normal;
+    align-items: center;
+    justify-content: space-around;
+}
+header span b a{
+    color:#fff;
+}
+header span b a{
+    display: inline-block;
+}
+header span b img{
+    width: 0.39rem;
+    height: 0.29rem;
+}
+header span i{
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 0.12rem;
+    box-shadow: 0 2px 1px 0px rgba(0,0,0,.5);
+}
+header span i:nth-of-type(1),header span i:nth-of-type(6){
+    width: 0.03rem;
+    height: 0.03rem;
+}
+header span i:nth-of-type(2),header span i:nth-of-type(5){
+    width: 0.05rem;
+    height: 0.05rem;
+}
+header span i:nth-of-type(3),header span i:nth-of-type(4){
+    width: 0.07rem;
+    height: 0.07rem;
+}
+header>a{
+    position: absolute;
+    left: 0.24rem;
+    bottom:0.15rem;
+    height: 0.52rem;
+    width: 0.42rem;
+    background: url(../../images/lc/more2.png) no-repeat center center/contain ;
+}
+/*去程返程*/
+section.plane-list{
+    margin-top: 0.88rem;
+    padding: 0.22rem 0.24rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+section.plane-list .plane{
+    width: 100%;
+    margin-bottom: 0.22rem;
+    border-radius: 0.2rem;
+    height: 2.43rem;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    background: url(../../images/lc/b.png) no-repeat center center/cover;
+}
+section.plane-list .plane .plane-info{
+    display:flex;
+    box-sizing: border-box;
+    padding: 0 0.2rem;
+    align-items: center;
+    height: 0.62rem;
+    color: #1B1B1B;
+    justify-content: space-around;
+}
+section.plane-list .plane .plane-info span:nth-of-type(1){
+    color: #3867FA;
+}
+section.plane-list .plane .plane-dur{
+    height: 1.16rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 0.15rem 0.5rem 0 1.2rem;
+    width: 100%;
+}
+section.plane-list .plane .plane-dur>span i{
+    font-style: normal;
+    color: #B7B7B7;
+}
+section.plane-list .plane .plane-dur>span{
+    width: 100%;
+    display: flex;
+    color: #595959;
+    justify-content: space-between;
+    align-items: center;
+}
+section.plane-list .plane .plane-dur>span:nth-of-type(2){
+    color: #B6B6B6;
+}
+section.plane-list .plane .plane-eat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.2rem;
+    padding-right: 0.5rem;
+    height: 0.6rem;
+}
+/*选择需要的产品*/
+
+section.pro-list{
+    width: 100%;
+    box-sizing: border-box;
+    padding:0 0.24rem;
+}
+section.pro-list h2{
+    color: #3867FA;
+    margin:0 0 0.16rem 0;
+    font-size: 11px;
+}
+section.pro-list .pro{
+    width: 100%;
+    height: 1.63rem;
+    margin-bottom: 0.22rem;
+    background: url(../../images/lc/b2.png) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 0.27rem;
+}
+section.pro-list .pro .pro-mes{
+    height: 0.53rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+section.pro-list .pro .pro-mes span:nth-of-type(1){
+    width: 0.32rem;
+    height: 0.32rem;
+    border: 1px solid #313131;
+    border-radius: 0.15rem;
+    text-align: center;
+    line-height: 0.33rem;
+    margin-right:0.19rem ;
+}
+section.pro-list .pro .pro-mes:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0.1rem;
+    height: 0.06rem;
+    right: 0;
+    background: url(../../images/lc/drop.png)no-repeat center center/cover;
+}
+section.pro-list .pro .pro-ad{
+    height: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+section.pro-list .pro .pro-ad .pro-ad-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:.05rem 0;
+    box-sizing:border-box;
+
+}
+section.pro-list .pro .pro-ad .pro-ad-left span{
+    color: #D3D3D3;
+}
+section.pro-list .pro .pro-ad .pro-ad-left span b{
+    width: 0.32rem;
+    height: 0.32rem;
+    border: 1px solid #CECECE;
+    border-radius: 0.15rem;
+    text-align: center;
+    line-height: 0.33rem;
+    margin-right:0.19rem ;
+}
+section.pro-list .pro .pro-ad .pro-ad-right{
+    color: #FF1F45;
+    display: flex;
+    align-items: center;
+}
+// section.pro-list .pro .pro-ad .pro-ad-right span:last-of-type{
+//     width: 0.74rem;
+//     height: 0.74rem;
+//     margin-left: 0.05rem;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-around;
+//     background: url(../../images/lc/ding.png) no-repeat center center /cover;
+// }
+// section.pro-list .pro .pro-ad .pro-ad-right span:last-of-type i{
+//     font-style: normal;
+// }
+.lianjie{
+    width: 0.74rem;
+    height: 0.74rem;
+    margin-left: 0.05rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#FF1F45;
+    justify-content: space-around;
+    background: url(../../images/lc/ding.png) no-repeat center center /cover;
+}
+.lianjie i{
+    font-style: normal;
+}

@@ -1,0 +1,80 @@
+body{
+    font-size:16px;
+}
+*{
+    box-sizing: border-box;
+}
+/*导航栏开始*/
+header{
+    width:100%;
+    height: 0.88rem;
+    background: #3867fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+    left:0;top:0;
+    z-index: 999;
+}
+header .left{
+    width: 1.4rem;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.22rem;
+}
+header .left img{
+    width:50%;
+}
+header .middle{
+    width: 2rem;
+    height:100%;
+    font-size: 0.34rem;
+    color:#fff;
+    text-align: center;
+    line-height: 0.88rem;
+    background: url("../../images/yws_img/point.png") no-repeat center center /contain;
+}
+header .right{
+    width: 1.3rem;
+    height:100%;
+    padding-right: 0.24rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*导航栏结束*/
+/*内容开始*/
+section{
+    width:100%;
+    height:auto;
+    margin-top:0.88rem;
+}
+.payfor{
+    width:100%;
+    height:1.10rem;
+    text-align: center;
+    line-height: 1.1rem;
+    color: #396cff;
+    font-size: 0.32rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+}
+section img{
+    width:100%;
+}
+section a{
+    display: block;
+    width:4.15rem;
+    height:0.94rem;
+    background: #396cff;
+    border-radius: 0.47rem;
+    margin: 0.64rem auto;
+    font-size: 0.34rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.94rem;
+    box-shadow: 0 0.05rem 0.2rem 0.02rem #396cff;
+}

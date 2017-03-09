@@ -1,0 +1,96 @@
+﻿* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  width: 100%;
+  height: .88rem;
+  background: #3867FA;
+  position: fixed;
+  z-index: 999999;
+  text-align: center;
+  font-size: 0;
+}
+.header .title {
+  width: auto;
+  height: .88rem;
+  margin: 0 auto;
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+}
+.header .title span {
+  color: #fff;
+  font-size: 19px;
+  padding: 0 .1rem;
+  text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
+}
+.header .title img {
+  width: .58rem;
+  height: .22rem;
+}
+.header .back {
+  position: absolute;
+  top: .22rem;
+  left: .24rem;
+  width: .63rem;
+  height: .64rem;
+  font-size: 0;
+}
+.header .back img {
+  width: 100%;
+  height: 100%;
+}
+.header .success {
+  position: absolute;
+  top: .22rem;
+  right: .24rem;
+  width: .63rem;
+  height: .64rem;
+  font-size: 0;
+}
+.header .success img {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background: url(../../images/lc/back3.png) no-repeat 0 0 / cover;
+  position: relative;
+}
+.main p {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 2.5rem;
+  font-size: 19px;
+  font-weight: bold;
+  color: #3867FA;
+}
+.main .btnbox {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 8rem;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+.main .btnbox a {
+  width: 2.48rem;
+  height: .84rem;
+  background: #3867FA;
+  border-radius: .5rem;
+  box-shadow: 0 0.05rem 0.1rem 0.03rem rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 14px;
+  line-height: .84rem;
+  text-align: center;
+}

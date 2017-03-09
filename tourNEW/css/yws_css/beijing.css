@@ -1,0 +1,149 @@
+body{
+    font-size:16px;
+}
+*{
+    box-sizing: border-box;
+}
+/*导航栏开始*/
+header{
+    width:100%;
+    height: 0.88rem;
+    background: #3867fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+    left:0;top:0;
+    z-index: 999;
+}
+header .left{
+    width: 1.4rem;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.22rem;
+}
+header .left img{
+    width:50%;
+}
+header .middle{
+    width: 2rem;
+    height:100%;
+    font-size: 0.34rem;
+    color:#fff;
+    text-align: center;
+    line-height: 0.88rem;
+    background: url("../../images/yws_img/point.png") no-repeat center center /contain;
+}
+header .right{
+    width: 0.42rem;
+    height:0.42rem;
+    border-radius: 50%;
+    background: url("../../images/yws_img/shaixuan.png") no-repeat center bottom /contain;
+    background-color: #fff;
+    padding-right: 0.24rem;
+    display: flex;
+    margin-right: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+/*导航栏结束*/
+/*内容开始*/
+section{
+    width:100%;
+    height:auto;
+    padding: 0.34rem;
+    margin-top:0.88rem;
+}
+.user1{
+    height:auto;
+    width:100%;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+    padding: 0.15rem 0.64rem 0.11rem 0.64rem;
+    border-radius: 0.12rem;
+    position: relative;
+    margin-top: 0.3rem;
+}
+.user1 .person{
+    width:0.78rem;
+    height:0.78rem;
+    border-radius: 50%;
+    border:0.02rem solid #fff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.21);
+    position: absolute;
+    top:-0.2rem;left:-0.2rem;
+    background: url("../../images/yws_img/man.png")no-repeat center center/cover;
+}
+.user1 .content{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+}
+.user1 .content span{
+    color:#999999;
+    padding: 0.05rem 0;
+}
+.user1 .content span i{
+    display: inline-block;
+    width:0.21rem;
+    height:0.21rem;
+    border:0.08rem solid #3867fa;
+    border-radius: 50%;
+}
+.user1 .content p{
+    line-height: 1.5;
+    color: #666666;
+    padding: 0.05rem 0;
+}
+.user1 .content div{
+    width:3.52rem;
+    height:1.52rem;
+    border-radius: 0.06rem;
+    background: url("../../images/yws_img/datong_03.png")no-repeat center center/cover;
+}
+.user1 .talk{
+    margin-top: 0.2rem;
+    width:100%;
+    height:0.56rem;
+    line-height: 0.56rem;
+    border-top: 1px dashed #000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #a9a9a9;
+    font-size: 0.19rem;
+}
+.user1 .talk .sixin{
+     width:0.4rem;
+     height:0.4rem;
+     border-radius: 50%;
+     box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.39);
+     background: url("../../images/yws_img/sixin.png")no-repeat center center/80%;
+ }
+ .user1 .talk .sixin a{
+    display: block;
+    width: 100%;
+    height: 100%;
+ }
+.user1 .talk .pinglun{
+    width:0.4rem;
+    height:0.4rem;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.39);
+    background: url("../../images/yws_img/pinlun.png")no-repeat center center/80%;
+}
+.user1 .talk div{
+    margin: 0 0.25rem;
+}
+.edit{
+    display: block;
+    width:0.73rem;
+    height:0.73rem;
+    margin:0 auto;
+    border-radius: 50%;
+    background: url("../../images/yws_img/edit_03.png")no-repeat center center/cover;
+}
+/*内容结束*/

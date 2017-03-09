@@ -1,0 +1,142 @@
+/*头部*/
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction:column;
+}
+section{
+    flex-grow:1;
+    overflow: auto;
+}
+header{
+    flex-grow:0;
+    flex-shrink:0;
+    height: 0.88rem;
+    background: #3867FA;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+header span{
+    line-height: 0.88rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    width: 3.5rem;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 0  2px 5px rgba(0,0,0,.5);
+}
+header span i{
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 0.12rem;
+    box-shadow: 0 2px 1px 0 rgba(0,0,0,.5);
+}
+header span i:nth-of-type(1),header span i:nth-of-type(6){
+    width: 0.03rem;
+    height: 0.03rem;
+}
+header span i:nth-of-type(2),header span i:nth-of-type(5){
+    width: 0.05rem;
+    height: 0.05rem;
+}
+header span i:nth-of-type(3),header span i:nth-of-type(4){
+    width: 0.07rem;
+    height: 0.07rem;
+}
+header a{
+    position: absolute;
+    left: 0.24rem;
+    bottom:0.15rem;
+    height: 0.52rem;
+    width: 0.42rem;
+    background: url(../../images/zh/more.png) no-repeat center center/contain ;
+}
+/*我的喜欢列表*/
+.love-list{
+    width: 100%;
+}
+.love-list .love{
+    width: 100%;
+    height: 3.26rem;
+}
+.love-list .love a{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0.44rem 0 0.73rem 0 ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: no-repeat center center /cover;
+}
+.love-list .love a .box{
+    font-size: 12px;
+    position: relative;
+    width: 100%;
+    height: 0.62rem;
+}
+.love-list .love a .box span{
+    width: 3.75rem;
+    height: 0.52rem;
+    background: #747FFF;
+    display: block;
+    border-radius: 0.1rem;
+    position: absolute;
+}
+.love-list .love a .box>span:nth-of-type(1){
+    left: 0.71rem;
+    top:0;
+    z-index: 99999;
+    box-shadow:6px 5px 10px -3px rgba(0,0,0,.5);
+    text-align: center;
+    line-height: 0.52rem;
+}
+.love-list .love a .box>span:nth-of-type(2){
+    right: 0.71rem;
+    bottom:0;
+}
+.love-list .love a .box>span:nth-of-type(2) .time{
+    position: absolute;
+    right: 0.46rem;
+    top:0.1rem;
+}
+.love-list .love a .box>span:nth-of-type(2) .time:before{
+    content: "";
+    display: block;
+    width: 0.18rem;
+    height: 0.18rem;
+    position: absolute;
+    left: -0.35rem;
+    top:0.05rem;
+    background: url("../../images/zh/history.png") no-repeat center center/cover;
+}
+.love-list .love a .box span:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom:0;
+    width: 1rem;
+    height: 0.32rem;
+    /*background:url(../../images/zh/add.png) no-repeat center center/cover;*/
+}
+.love-list .love a .add{
+    font-size: 17px;
+}
+.love-list .love a .order{
+    width: 0.60rem;
+    height: 0.32rem;
+    font-size: 9px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+    border-top:1px solid #fff ;
+    text-align: center;
+    line-height: 0.32rem;
+}

@@ -1,0 +1,240 @@
+﻿* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  height: .88rem;
+  background: #3867FA;
+  position: relative;
+  text-align: center;
+  font-size: 0;
+  flex: 0 1 auto;
+}
+.header .title {
+  width: auto;
+  height: .88rem;
+  margin: 0 auto;
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+}
+.header .title span {
+  color: #fff;
+  font-size: 19px;
+  padding: 0 .1rem;
+  text-shadow: 0 0.03rem 0.05rem rgba(0, 0, 0, 0.8);
+}
+.header .title img {
+  width: .58rem;
+  height: .22rem;
+}
+.header .back {
+  position: absolute;
+  top: .22rem;
+  left: .24rem;
+  width: .63rem;
+  height: .64rem;
+  font-size: 0;
+}
+.header .back img {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  flex: 1 1 auto;
+  overflow: auto;
+  position: relative;
+}
+.main .nav {
+  width: 100%;
+  height: .86rem;
+  position: fixed;
+  padding: 0.23rem .34rem 0.05rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999999999;
+  background: #fff;
+}
+.main .box{
+  position: absolute;
+  top:0.86rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.main .nav .daohang {
+  width: 2.05rem;
+  height: .58rem;
+  position: relative;
+}
+.main .nav .daohang .tiao {
+  width: 2.05rem;
+  height: .42rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.21rem;
+  left: 0;
+  background: #3663F1;
+  border-radius: .1rem;
+}
+.main .nav .daohang .con {
+  width: 1.9rem;
+  height: .58rem;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -0.95rem;
+  border-radius: .1rem;
+  box-shadow: 0.01rem -0.05rem 0.1rem 0.03rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+.main .nav .daohang .con span {
+  font-size: 12px;
+  color: #151515;
+}
+.main .nav .daohang .con1 img {
+  width: .09rem;
+  height: .15rem;
+  margin: 0 .3rem;
+}
+.main .nav .daohang .con2 {
+  justify-content: space-around;
+}
+.main .nav .daohang .con2 .path {
+  width: .22rem;
+  height: .23rem;
+}
+.main .nav .daohang .con2 .more {
+  width: .11rem;
+  height: .06rem;
+}
+.main .nav .daohang .con3 {
+  flex-direction: row-reverse;
+}
+.main .nav .daohang .con3 img {
+  width: .09rem;
+  height: .15rem;
+  margin: 0 .3rem;
+}
+.main .nav .active .tiao {
+  display: none;
+}
+.main .nav .active .con span {
+  color: #3867FA;
+}
+.main .lu {
+  display: block;
+  width: 7.12rem;
+  height: 2.7rem;
+  margin: 0 auto;
+  background: url(../../images/lc/beijing.png) no-repeat 0 0 / cover;
+  padding: .15rem;
+}
+.main .lu .left {
+  width: 2.12rem;
+  height: 2.4rem;
+  float: left;
+  position: relative;
+}
+.main .lu .left .top {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: .8rem;
+  left: 0;
+  font-size: 12px;
+  color: #fff;
+}
+.main .lu .left .bottom {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 1.35rem;
+  left: 0;
+  font-size: 13px;
+  color: #fff;
+}
+.main .lu .right {
+  width: 4.68rem;
+  height: 2.4rem;
+  float: right;
+}
+.main .lu .right .line {
+  width: 100%;
+  height: .6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .lu .right .line h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1C1C1C;
+  padding: 0 .4rem;
+}
+.main .lu .right .line img {
+  width: 1.28rem;
+  height: .4rem;
+}
+.main .lu .right .line h4 {
+  font-size: 14px;
+  color: #1C1C1C;
+  padding: 0 .3rem;
+}
+.main .lu .right .line h5 {
+  font-size: 14px;
+  color: #DBDBDB;
+  padding: 0 .3rem;
+}
+.main .lu .right .line span {
+  font-size: 14px;
+  color: #1C1C1C;
+  padding: 0 .3rem;
+}
+.main .lu .right .line p {
+  font-size: 14px;
+  color: #FF1F45;
+  padding: 0 .3rem;
+}
+.main .xuan {
+  background: url(../../images/lc/beijing2.png) no-repeat 0 0 / cover;
+}
+.footer {
+  width: 100%;
+  flex: 0 0 auto;
+  height: .98rem;
+  background: #3163FF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer a img {
+  width: .5rem;
+  height: .54rem;
+}
+.footer a span {
+  font-size: 12px;
+  color: #fff;
+}
+.footer .active span {
+  color: #FFDF00;
+}
