@@ -7,28 +7,72 @@
     <script src="js/rem.js"></script>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/zh/jd.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 </head>
 <body>
 <!--头部开始-->
 <header>
-    <a href="zh-jdxq.html" class="more"></a>
-    <span><i></i><i></i><i></i>酒店<i></i><i></i><i></i></span>
-    <a href="" class="collection"></a>
-    <a href="" class="share"></a>
-    <a href="index.html" class="home"></a>
+    <!-- 左边图标 -->
+     <div class="tools">
+        <a href="zh-jdxq.html">
+            <img src="images/public_images/public_pre.png" alt="">
+        </a>
+     </div>
+     <div class="title">
+        <i></i>
+        <i></i>
+        <i></i>
+        <span>个人中心</span>
+        <i></i>
+        <i></i>
+        <i></i>
+     </div>
+     <!-- 右边图标，最多四个 -->
+     <div class="tools">
+        <a href="">
+            <img src="images/public_images/public_collect.png" alt="">
+        </a>
+        <a href="">
+            <img src="images/public_images/public_share.png" alt="">
+        </a>
+        <a href="index.html">
+            <img src="images/public_images/public_home.png" alt="">
+        </a>
+     </div>
 </header>
 <!--头部结束-->
 
+<div class="main">
+    
+
 <!--酒店展示开始-->
 <section class="hotel-show">
-    <div class="hotel-top">
-        <span><i>3</i><b>/10</b></span>
-        <div class="img-box">
-            <img src="images/zh/jiudian.jpg" alt="">
-        </div>
-        <div class="img-box">
-            <img src="images/zh/jiudian2.jpg" alt="">
-        </div>
+    <div class="hotel-top swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="img-box">
+                    <img src="images/zh/jiudian.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-box">
+                    <img src="images/zh/jiudian2.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-box">
+                    <img src="images/zh/jiudian.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="img-box">
+                    <img src="images/zh/jiudian2.jpg" alt="">
+                </div>
+            </div>
+        <div class="swiper-pagination"></div>
+    </div>
+        
+        
     </div>
     <div class="hotel-bottom">
         <p class="info">
@@ -103,3 +147,18 @@
     </div>
 </section>
 <!--酒店详情结束-->
+</div>
+</body>
+</html>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.hotel-top', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        autoplay: 2500,
+        loop:true,
+        autoplayDisableOnInteraction: false
+    });
+</script>

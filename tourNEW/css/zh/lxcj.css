@@ -47,11 +47,15 @@ header .top-title span i:nth-of-type(3),header span i:nth-of-type(4){
 }
 header .top-title a{
     position: absolute;
-    left: 0.24rem;
-    bottom:0.15rem;
+    left: 0.15rem;
+    bottom:0;
+    top:0;
+    margin: auto;
     height: 0.52rem;
-    width: 0.42rem;
-    background: url(../../images/zh/more.png) no-repeat center center/contain ;
+    width: 0.52rem;
+}
+header .top-title a img{
+   width: 100%;
 }
 header .left-circle{
     width: 4.59rem;

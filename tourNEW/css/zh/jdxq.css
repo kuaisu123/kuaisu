@@ -1,19 +1,32 @@
 /*头部*/
+    html,body{
+        height: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+    }
 header{
     height: 0.88rem;
     background: #3867FA;
     font-size: 17px;
     color: #fff;
+    flex-grow: 0;
+    flex-shrink: 0;
     text-align: center;
-    padding: 0 0.24rem;
+    padding: 0 0.15rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 header .more{
     height: 0.52rem;
-    width: 0.42rem;
-    background: url(../../images/zh/more.png) no-repeat center center/contain ;
+    width: 0.52rem;
+    margin-top: 0.1rem;
+}
+header .more img{
+    width: 100%;
 }
 header .input-box{
     width: 4rem;
@@ -74,9 +87,12 @@ header .address:before{
 /*酒店列表*/
 .hotel-list{
     padding: 0 0.32rem;
+    overflow: auto;
+    flex-grow: 1;
 }
 .hotel-list .hotel{
     width: 100%;
+    
     border-radius: 0.2rem;
     height: 5.42rem;
     box-sizing: border-box;

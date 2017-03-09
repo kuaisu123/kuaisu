@@ -1,68 +1,88 @@
-/*头部*/
-header{
-    height: 0.88rem;
-    background: #3867FA;
-    font-size: 17px;
-    color: #fff;
-    text-align: center;
-    position: relative;
-}
-header span{
-    line-height: 0.88rem;
+/*头部样式*/
+html,body{
     height: 100%;
-    margin: 0 auto;
-    display: flex;
-    width: 3.15rem;
-    align-items: center;
-    justify-content: space-around;
-    text-shadow: 0px  2px 5px rgba(0,0,0,.5);
 }
-header span i{
-    display: inline-block;
+body{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+}
+header{
+    width: 100%;
+    height: 0.88rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background: #3867FA;
+    box-sizing:border-box;
+    padding: 0 0.24rem;
+    font-size: 17px;
+    text-shadow: 0px  2px 5px rgba(0,0,0,.5);
+    position: relative;
+    color: #fff;
+}
+header .title{
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 3.15rem;
+    display: flex;
+    margin: 0 auto;
+    justify-content:space-between;
+    align-items:center;
+}
+header .title i{
     background: #fff;
+    display: inline-table;
     border-radius: 50%;
-    margin: 0 0.12rem;
     box-shadow: 0 2px 1px 0px rgba(0,0,0,.5);
 }
-header span i:nth-of-type(1),header span i:nth-of-type(6){
+header .title i:nth-of-type(1),header .title i:nth-of-type(6){
     width: 0.03rem;
     height: 0.03rem;
 }
-header span i:nth-of-type(2),header span i:nth-of-type(5){
+header .title i:nth-of-type(2),header .title i:nth-of-type(5){
     width: 0.05rem;
     height: 0.05rem;
 }
-header span i:nth-of-type(3),header span i:nth-of-type(4){
+header .title i:nth-of-type(3),header .title i:nth-of-type(4){
     width: 0.07rem;
     height: 0.07rem;
 }
-header .more{
-    position: absolute;
-    left: 0.24rem;
-    bottom:0.15rem;
+header .tools{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+header .tools a{
+    width: 0.52rem;
     height: 0.52rem;
-    width: 0.42rem;
-    background: url(../../images/zh/more.png) no-repeat center center/contain ;
+    margin-top: 0.1rem;
 }
-header a:not(more){
+header .tools a img{
+    width: 100%;
+}
+header .tools:last-of-type{
     position: absolute;
-    bottom:0.03rem;
-    height: 0.6rem;
-    width: 0.6rem;
-    background:no-repeat center center/contain ;
+    top:0;
+    bottom:0;
+    margin: auto;
+    right: 0.15rem;
 }
-header .collection{
-    background-image: url(../../images/zh/shoucang.png);
-    right: 0.24rem;
+header .tools:first-of-type{
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin: auto;
+    left: 0.15rem;
+}
+.main{
+    width:100%;
+    overflow: auto;
+    flex-grow: 1;
 
-}
-header .share{
-    right: 0.9rem;
-    background-image: url(../../images/zh/share.png);
-}
-header .home{
-    right: 1.56rem;
-    background-image: url(../../images/zh/jhome.png);
 }
 
 /*酒店展示*/
@@ -93,14 +113,14 @@ section.hotel-show{
     width: 100%;
     height: 100%;
 }
-.hotel-show .hotel-top .img-box:nth-of-type(1){
+/*.hotel-show .hotel-top .img-box:nth-of-type(1){
     width: 4.2rem;
     float: left;
 }
 .hotel-show .hotel-top .img-box:nth-of-type(2){
     float: right;
     width: 2.55rem;
-}
+}*/
 .hotel-show .hotel-top span{
     position: absolute;
     top:0;
@@ -131,7 +151,7 @@ section.hotel-show{
 }
 .hotel-show .hotel-bottom .info .star{
     height: 0.28rem;
-    font-size: 0;
+    font-size: 1px;
 }
 .hotel-show .hotel-bottom .info .star img{
     height: 100%;
