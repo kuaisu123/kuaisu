@@ -18,9 +18,9 @@ header.header{
     align-items: center;
     box-sizing: border-box;
     position: relative;
+    overflow: hidden;
     flex-grow: 0;
     flex-shrink: 0;
-    overflow: hidden;
 }
 header.header .prow{
     float: left;
@@ -31,7 +31,6 @@ header.header .prow{
     left:0.24rem;
 
 }
-/*搜索头部*/
 header.header .prow img{
     width:0.44rem;margin-top:0.23rem;
 }
@@ -47,15 +46,9 @@ header.header .search-box a img{
     margin:0.12rem;
     float: left;
 }
-header.header .search-box input{
-    display: block;
-    float: left;
-    width:3rem;
-    height:0.42rem;
-    color:#fff;
-    background: rgba(0,0,0,0);
-    outline: none;
-    border:0;
+header.header .search-box .Micro{
+    float: right;
+    margin-right:0.12rem;
 }
 section.main{
     width:100%;
