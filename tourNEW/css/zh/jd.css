@@ -24,11 +24,9 @@ header{
     color: #fff;
 }
 header span{
-    line-height: 0.88rem;
-    height: 100%;
-    margin: 0 auto;
     display: flex;
     display:-webkit-flex;
+}
 header .title{
     position: absolute;
     left: 0;
