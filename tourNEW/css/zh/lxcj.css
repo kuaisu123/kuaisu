@@ -136,9 +136,10 @@ section.travel-list .travel{
     font-size: 11px;
 }
 section.travel-list .travel p{
-    margin-bottom: 0.12rem;
+    margin-bottom: 0.08rem;
     color: #747474;
 }
+
 section.travel-list .travel:nth-of-type(odd){
     float: right;
     border-left:1px solid #A0E8EC ;
@@ -203,6 +204,6 @@ section.travel-list .travel:nth-of-type(even):before{
     height: 0.15rem;
     border-radius: 50%;
     box-sizing: border-box;
-    transform: translateX(60%);
+    transform: translateX(50%);
     border: 0.04rem solid #3867FA;
 }
