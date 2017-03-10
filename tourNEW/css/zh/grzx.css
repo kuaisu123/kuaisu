@@ -1,0 +1,301 @@
+/*头部*/
+<<<<<<< HEAD
+body,html{
+    height: 100%;
+}
+body{
+    display: flex;
+    display:-webkit-flex;
+    flex-direction:column;
+    -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
+}
+body>*{
+    flex-grow:1;
+}
+body>div{
+    overflow: auto;
+}
+header{
+    flex-grow:0;
+    flex-shrink:0;
+    height: 0.88rem;
+    background: #3867FA;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+header span{
+    line-height: 0.88rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    display:-webkit-flex;
+    width: 3.5rem;
+    align-items: center;
+    justify-content: space-around;
+    text-shadow: 0px  2px 5px rgba(0,0,0,.5);
+}
+header span i{
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 0.12rem;
+    box-shadow: 0 2px 1px 0px rgba(0,0,0,.5);
+}
+header span i:nth-of-type(1),header span i:nth-of-type(6){
+    width: 0.03rem;
+    height: 0.03rem;
+}
+header span i:nth-of-type(2),header span i:nth-of-type(5){
+    width: 0.05rem;
+    height: 0.05rem;
+}
+header span i:nth-of-type(3),header span i:nth-of-type(4){
+    width: 0.07rem;
+    height: 0.07rem;
+}
+header a{
+    position: absolute;
+    right: 0.24rem;
+    bottom:0.15rem;
+    height: 0.52rem;
+    width: 0.42rem;
+    background: url(../../images/zh/home.png) no-repeat center center/contain ;
+}
+=======
+
+/*头部样式*/
+    html,body{
+        height: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+    }
+    header{
+        width: 100%;
+        height: 0.88rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+        background: #3867FA;
+        box-sizing:border-box;
+        padding: 0 0.24rem;
+        font-size: 17px;
+        text-shadow: 0px  2px 5px rgba(0,0,0,.5);
+        position: relative;
+        color: #fff;
+    }
+    header .title{
+        position: absolute;
+        left: 0;
+        top:0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 3.15rem;
+        display: flex;
+        margin: 0 auto;
+        justify-content:space-between;
+        align-items:center;
+    }
+    header .title i{
+        background: #fff;
+        display: inline-table;
+        border-radius: 50%;
+        box-shadow: 0 2px 1px 0px rgba(0,0,0,.5);
+    }
+    header .title i:nth-of-type(1),header .title i:nth-of-type(6){
+        width: 0.03rem;
+        height: 0.03rem;
+    }
+    header .title i:nth-of-type(2),header .title i:nth-of-type(5){
+        width: 0.05rem;
+        height: 0.05rem;
+    }
+    header .title i:nth-of-type(3),header .title i:nth-of-type(4){
+        width: 0.07rem;
+        height: 0.07rem;
+    }
+    header .tools{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    header .tools a{
+        width: 0.52rem;
+        height: 0.52rem;
+        margin-top: 0.1rem;
+    }
+    header .tools a img{
+        width: 100%;
+    }
+    header .tools:last-of-type{
+        position: absolute;
+        top:0;
+        bottom:0;
+        margin: auto;
+        right: 0.15rem;
+    }
+    header .tools:first-of-type{
+        position: absolute;
+        top:0;
+        bottom:0;
+        margin: auto;
+        left: 0.15rem;
+    }
+    .main{
+        width:100%;
+        overflow: auto;
+        flex-grow: 1;
+  
+    }
+>>>>>>> 120e9395fa14060b876842306a148292060e43fe
+
+/*banner图*/
+section.banner{
+    width: 100%;
+    height: 3.58rem;
+    background: url(../../images/zh/mask.jpg) no-repeat center center/cover ;
+    display: flex;
+    display:-webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-orient:vertical;
+  -webkit-box-direction: normal;
+}
+section.banner .box{
+    width: 3.82rem;
+    height: 1.15rem;
+    display: flex;
+    display:-webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+section.banner .img-box{
+    width: 1.09rem;
+    height: 1.09rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+section.banner .img-box:nth-of-type(odd){
+    border: 0;
+    width: 0.48rem;
+    border-radius: 0;
+}
+section.banner .img-box:nth-of-type(odd) img{
+    height: 0.4rem;
+    margin-top: 0.12rem;
+}
+section.banner .img-box img{
+    width: 100%;
+}
+section.banner p:nth-of-type(1){
+    font-size: 13px;
+    color:#fff;
+    margin-top: 0.27rem;
+    font-weight: bold;
+}
+section.banner p:nth-of-type(2){
+    font-size: 9px;
+    margin-top: 0.18rem;
+    color: #F9F9F9;
+}
+
+/*旅行故事集*/
+.story-list{
+    margin: 0.07rem 0;
+   box-sizing: border-box;
+    padding: 0 0.32rem;
+    width: 100%;
+}
+.story-list h2{
+    padding: 0.35rem 0;
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    background: url(../../images/zh/shadow.png) no-repeat center bottom;
+}
+.story-list .story{
+    width: 100%;
+    height: 3.12rem;
+    border-radius: 0.1rem;
+    padding: 0.22rem 0.34rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 0.24rem;
+    background:no-repeat center center /cover;
+}
+.story-list .story a{
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    height: 2.68rem;
+    width: 100%;
+}
+.story-list .story a strong{
+    display: block;
+    width: 100%;
+    margin-bottom:0.18rem ;
+}
+.story-list .story a span{
+    display: block;
+    width: 50%;
+
+}
+.story-list .story a span .date{
+    font-weight: normal;
+    padding-left: 0.26rem;
+    position: relative;
+
+}
+.story-list .story a span .date:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom:0;
+    margin: auto;
+    width: 0.18rem;
+    height: 0.18rem;
+    background: url(../../images/zh/history.png) no-repeat center center /cover;
+}
+.story-list .story a span .day{
+    margin-left:0.2rem ;
+    font-weight: normal;
+}
+.story-list .story a .info{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    display: flex;
+    justify-content:space-between;
+}
+.story-list .story a .info i{
+    float: left;
+    width: 0.3rem;
+    height: 0.32rem;
+    font-weight: normal;
+}
+.story-list .story a .info i:nth-of-type(even){
+    font-style: normal;
+    width: auto;
+}
+.story-list .story a .info i:nth-of-type(1){
+    background: url("../../images/zh/eye.png") no-repeat center center/contain;
+}
+.story-list .story a .info i:nth-of-type(3){
+    background: url("../../images/zh/heart.png") no-repeat center center/contain;
+}
+.story-list .story a .info i:nth-of-type(5){
+    background: url("../../images/zh/chat.png") no-repeat center center/contain;
+}
