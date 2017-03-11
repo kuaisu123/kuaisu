@@ -65,6 +65,7 @@ body {
 .main {
   width: 100%;
   flex: 1 1 auto;
+  -webkit-box-flex:1;
   overflow: auto;
   position: relative;
 }

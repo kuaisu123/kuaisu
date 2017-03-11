@@ -23,6 +23,7 @@ body {
   display: flex;
   display:-webkit-flex;
   flex: none;
+  -webkit-box-flex:0;
   justify-content: center;
   align-items: center;
 }

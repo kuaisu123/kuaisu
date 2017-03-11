@@ -14,6 +14,7 @@ body{
     -webkit-box-orient:vertical;
   -webkit-box-direction: normal;
     flex-grow: 1;
+    -webkit-box-flex:1;
 }
 header.header{
     width:100%;
@@ -29,6 +30,7 @@ header.header{
     position: relative;
     overflow: hidden;
     flex-grow: 0;
+    -webkit-box-flex:0;
     flex-shrink: 0;
 }
 header.header .prow{
@@ -81,6 +83,7 @@ section.main{
     width:100%;
     overflow: auto;
     flex-grow: 1;
+    -webkit-box-flex:1;
 }
 section.place{
     width:100%;

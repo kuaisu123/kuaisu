@@ -34,7 +34,7 @@ i {
   display: flex;
   display:-webkit-flex;
   flex: none;
-
+  -webkit-box-flex:0;
   justify-content: center;
   align-items: center;
 }
@@ -87,6 +87,7 @@ i {
 .main {
   width: 100%;
   flex: 1 1 auto;
+  -webkit-box-flex:1;
 }
 .main .mudidi {
   width: 100%;
@@ -290,6 +291,7 @@ i {
 }
 .footer .queding {
   flex: 1 1 auto;
+  -webkit-box-flex:1;
   display: flex;
   display:-webkit-flex;
   align-items: center;

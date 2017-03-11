@@ -23,6 +23,7 @@ body {
   text-align: center;
   font-size: 0;
   flex: 0 1 auto;
+  -webkit-box-flex:0;
 }
 .header .title {
   width: auto;
@@ -31,6 +32,7 @@ body {
   display: flex;
   display:-webkit-flex;
   flex: none;
+  -webkit-box-flex:0;
   justify-content: center;
   align-items: center;
 }
@@ -60,6 +62,7 @@ body {
 .main {
   width: 100%;
   flex: 1 1 auto;
+  -webkit-box-flex:1;
   overflow: auto;
 }
 .main .nav {
@@ -222,6 +225,7 @@ body {
 .footer {
   width: 100%;
   flex: 0 0 auto;
+  -webkit-box-flex:0;
   height: .98rem;
   background: #3163FF;
   display: flex;

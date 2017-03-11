@@ -14,11 +14,13 @@ body{
     -webkit-box-orient:vertical;
   -webkit-box-direction: normal;
     flex-grow: 1;
+    -webkit-box-flex:1;
 }
 header{
         width: 100%;
         height: 0.88rem;
         flex-grow: 0;
+        -webkit-box-flex:0;
         flex-shrink: 0;
         background: #3867FA;
         box-sizing:border-box;
@@ -92,15 +94,18 @@ section.main{
     width:100%;
     overflow: auto;
     flex-grow: 1;
+    -webkit-box-flex:1;
 }
 /*了解更多*/
 section.list{
     width:100%;
     flex:  1 0 auto;
+    -webkit-box-flex:1;
     background: url("../../images/lt-images/lt-original.png") center -0.88rem no-repeat;
     background-size: 100%;
     overflow: auto;
     flex-grow: 1;
+    -webkit-box-flex:1;
 }
 section.list .ori-more{
     width:100%;
