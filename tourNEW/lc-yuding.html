@@ -60,9 +60,9 @@
 				<span>婴儿</span>
 			</div>
 			<div class="line5">
-				<p><span class="ji">-</span><span class="num">1</span><span class="ji">+</span></p>
-				<p><span class="ji">-</span><span class="num">0</span><span class="ji">+</span></p>
-				<p><span class="ji">-</span><span class="num">0</span><span class="ji">+</span></p>
+				<p><span class="ji jian">-</span><span class="num">1</span><span class="ji jia">+</span></p>
+				<p><span class="ji jian">-</span><span class="num">0</span><span class="ji jia">+</span></p>
+				<p><span class="ji jian">-</span><span class="num">0</span><span class="ji jia">+</span></p>
 			</div>
 		</div>
 		<div class="box" style="z-index: 2">
@@ -105,9 +105,9 @@
 				<span>婴儿</span>
 			</div>
 			<div class="line5">
-				<p><span class="ji">-</span><span class="num">1</span><span class="ji">+</span></p>
-				<p><span class="ji">-</span><span class="num">0</span><span class="ji">+</span></p>
-				<p><span class="ji">-</span><span class="num">0</span><span class="ji">+</span></p>
+				<p><span class="ji jian">-</span><span class="num">1</span><span class="ji jia">+</span></p>
+				<p><span class="ji jian">-</span><span class="num">0</span><span class="ji jia">+</span></p>
+				<p><span class="ji jian">-</span><span class="num">0</span><span class="ji jia">+</span></p>
 			</div>
 		</div>
 		<div class="box">
@@ -150,9 +150,9 @@
 				<span>婴儿</span>
 			</div>
 			<div class="line5">
-				<p><span class="ji">-</span><span class="num">1</span><span class="ji">+</span></p>
-				<p><span class="ji">-</span><span class="num">0</span><span class="ji">+</span></p>
-				<p><span class="ji">-</span><span class="num">0</span><span class="ji">+</span></p>
+				<p><span class="ji jian">-</span><span class="num">1</span><span class="ji jia">+</span></p>
+				<p><span class="ji jian ">-</span><span class="num">0</span><span class="ji jia">+</span></p>
+				<p><span class="ji jian ">-</span><span class="num">0</span><span class="ji jia">+</span></p>
 			</div>
 		</div>
 	</section>
@@ -177,6 +177,20 @@
 			}
 			this.className = "daohang active";
 			box[this.index].style.zIndex = 2;
+		}
+	}
+
+
+
+
+	var jia = document.querySelectorAll(".jia");
+	var jian = document.querySelectorAll(".jian");
+	var num = document.querySelectorAll(".num");
+	for(var i=0;i<jia.length;i++){
+		jia[i].index=i;
+		jia[i].onclick=function(){
+			console.log(1);
+			num[this.index].innerHTML=parseInt(num[this.index].innerHTML)+1;
 		}
 	}
 </script>
