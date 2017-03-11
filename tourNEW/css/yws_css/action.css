@@ -9,9 +9,11 @@ body{
     -webkit-box-orient:vertical;
   -webkit-box-direction: normal;
     flex-grow:1;
+    -webkit-box-flex:1;
 }
 body>*{
     flex-grow:1;
+    -webkit-box-flex:1;
 }
 *{
     box-sizing:border-box;
@@ -27,6 +29,7 @@ header{
     justify-content: space-between;
     overflow: hidden;
     flex-grow:0;
+    -webkit-box-flex:0;
     flex-shrink:0;
 }
 header .left{
@@ -71,6 +74,7 @@ section{
     padding: 0 0.32rem;
     /*padding-bottom: 0.5rem;*/
     flex-grow:1;
+    -webkit-box-flex:1;
     overflow: auto;
 }
 .add{
@@ -234,6 +238,7 @@ section{
 /*$footer 底部 开始*/
 footer{
     flex-grow:0;
+    -webkit-box-flex:0;
     flex-shrink:0;
     height: 0.98rem;
     background: #003EFF;

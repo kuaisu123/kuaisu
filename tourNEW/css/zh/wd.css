@@ -11,18 +11,21 @@ body{
 }
 body>*{
     flex-grow:1;
+    -webkit-box-flex:1;
 }
 body>div{
     overflow: auto;
 }
 footer{
     flex-grow:0;
+    -webkit-box-flex:0;
     flex-shrink:0;
 }
 header{
     width: 100%;
     height: 0.88rem;
     flex-grow: 0;
+    -webkit-box-flex:0;
     flex-shrink: 0;
     background: #3867FA;
     box-sizing:border-box;
@@ -167,6 +170,7 @@ section.list li a img{
 /*底部导航*/
 .footer{
     flex-grow:0;
+    -webkit-box-flex:0;
     flex-shrink:0;
     height: 0.98rem;
     background: #003EFF;

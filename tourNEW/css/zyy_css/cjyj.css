@@ -30,6 +30,7 @@ body,html{
 /*header*/
 .header-box{
 	flex:0 0 auto;
+	-webkit-box-flex:0;
 	height: 0.88rem;
 	width: 100%;
 	background: #3867FA;
@@ -101,6 +102,7 @@ body,html{
 /*section-box*/
 .sectionsbox{
 	flex: 1 1 auto;
+	-webkit-box-flex:1;
 	overflow: auto;
 	position: relative;
 }

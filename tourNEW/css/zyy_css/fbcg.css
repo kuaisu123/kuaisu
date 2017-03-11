@@ -17,6 +17,7 @@ body,html{
 /*header*/
 .header-box{
 	flex:0 0 auto;
+	-webkit-box-flex:0;
 	height: 0.88rem;
 	width: 100%;
 	background: #3867FA;
@@ -89,6 +90,7 @@ body,html{
 /*section-box*/
 .section-box{
 	flex: 1 0 auto;
+	-webkit-box-flex:1;
 	background: url(../../images/zyy_images/zyy-success.png)center center/cover;
 	position: relative;
 }

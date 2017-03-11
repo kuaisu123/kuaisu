@@ -23,6 +23,7 @@ html.over body {
 /*header*/
 .header-box{
 	flex:0 0 auto;
+	-webkit-box-flex:0;
 	height: 0.88rem;
 	width: 100%;
 	background: #3867FA;
@@ -95,6 +96,7 @@ html.over body {
 /*content*/
 .sectionsbox{
 	flex:1 1 auto;
+	-webkit-box-flex:1;
 	overflow: auto;
 	padding: .4rem .32rem 0 .32rem;
 }
@@ -136,6 +138,7 @@ html.over body {
 .content-1 .content-img{
 	width: 6.08rem;
 	flex:1 0 auto;
+	-webkit-box-flex:1;
 	height: 100%;
 	border-radius: 0.1rem;
 	overflow: hidden;

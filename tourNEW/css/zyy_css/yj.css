@@ -25,6 +25,7 @@ html.over body {
 
 .headerbox{
 	flex:0 0 auto;
+	-webkit-box-flex:0;
 	height: 0.88rem;
 	width: 100%;
 	position: fixed;
@@ -167,6 +168,7 @@ html.over body {
 
 .sectionsb{
 	flex:1 0 auto;
+	-webkit-box-flex:1;
 	margin-top: .88rem;
 }
 
@@ -197,6 +199,7 @@ html.over body {
 	width: 1.15rem;
 	height: 1.15rem;
 	flex:0 0 auto;
+	-webkit-box-flex:0;
 	border: 3px solid #fff;
 	box-sizing:content-box;
 	overflow: hidden;
@@ -238,6 +241,7 @@ html.over body {
 }
 .zyy-xqx li{
 	flex:0 0 auto;
+	-webkit-box-flex:0;
 	width: 33.333333%;
 	text-align: center;
 	display: flex;
@@ -270,6 +274,7 @@ html.over body {
 .zyy-gwd li{
 	width: 25%;
 	flex:0 0 auto;
+	-webkit-box-flex:0;
 	text-align: left;
 }
 .zyy-gwd li img{
@@ -400,6 +405,7 @@ html.over body {
 	width: 2.2rem!important;
 	height: 2.2rem!important;
 	flex: 0 0 auto;
+	-webkit-box-flex:0;
 	overflow: hidden;
 	margin-right: .16rem;
 }

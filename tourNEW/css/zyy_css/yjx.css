@@ -21,6 +21,7 @@ i{
 /*header*/
 .header-box{
 	flex:0 0 auto;
+	-webkit-box-flex:0;
 	height: 0.88rem;
 	width: 100%;
 	background: #3867FA;
@@ -130,6 +131,7 @@ i{
 
 .section-box{
 	flex:1 0 auto;
+	-webkit-box-flex:1;
 }
 
 .zyy-bannerbox{
@@ -186,6 +188,7 @@ i{
 	border: 2px solid #fff;
 	overflow: hidden;
 	flex: 0 0 auto;
+	-webkit-box-flex:0;
 }
 .zyy-banner-top .zyy-topc img{
 	width: 100%;

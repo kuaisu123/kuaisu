@@ -10,6 +10,7 @@ body{
     -webkit-box-orient:vertical;
   -webkit-box-direction: normal;
     flex-grow:1;
+    -webkit-box-flex:1;
 }
 *{
     box-sizing:border-box;
@@ -25,6 +26,7 @@ header{
     justify-content: space-between;
     overflow: hidden;
     flex-grow:0;
+    -webkit-box-flex:0;
     flex-shrink:0;
 }
 header .left{
@@ -80,6 +82,7 @@ section{
     height:auto;
     padding-bottom: 0.5rem;
     flex-grow:1;
+    -webkit-box-flex:1;
     overflow: auto;
 }
 /*热门目的地开始*/
@@ -220,6 +223,7 @@ section .tour .contain a{
     background: #fff;
     padding: 0 0.16rem;
     flex: 1 0 auto;
+    -webkit-box-flex:1;
     margin-top: 0.2rem;
 }
 section .tour .contain a .person{
@@ -277,6 +281,7 @@ section .tour .contain a .talk{
 /*$footer 底部 开始*/
 footer{
     flex-grow:0;
+    -webkit-box-flex:0;
     flex-shrink:0;
     height: 0.98rem;
     background: #003EFF;

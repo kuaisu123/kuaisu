@@ -9,6 +9,7 @@
         -webkit-box-orient:vertical;
   -webkit-box-direction: normal;
         flex-grow: 0;
+        -webkit-box-flex:0;
     }
 header{
     height: 0.88rem;
@@ -16,6 +17,7 @@ header{
     font-size: 17px;
     color: #fff;
     flex-grow: 0;
+    -webkit-box-flex:0;
     flex-shrink: 0;
     text-align: center;
     padding: 0 0.15rem;
@@ -94,6 +96,7 @@ header .address:before{
     padding: 0 0.32rem;
     overflow: auto;
     flex-grow: 1;
+    -webkit-box-flex:1;
 }
 .hotel-list .hotel{
     width: 100%;

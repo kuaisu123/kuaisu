@@ -19,6 +19,7 @@ body,html{
 /*header*/
 .header-box{
 	flex:0 0 auto;
+	-webkit-box-flex:0;
 	height: 0.88rem;
 	width: 100%;
 	background: #3867FA;
@@ -126,6 +127,7 @@ body,html{
 /*sections-box*/
 .sections-box{
 	flex:1 0 auto;
+	-webkit-box-flex:1;
 	padding: .22rem .32rem 0; 
 }
 .zyy-bjcon{
@@ -139,6 +141,7 @@ body,html{
 .zyy-bjcon .img{
 	height: 100%;
 	flex:1 0 auto;
+	-webkit-box-flex:1;
 	overflow: hidden;
 	border-radius: .1rem;
 }
@@ -151,6 +154,7 @@ body,html{
 	width: 5.08rem;
 	height: 100%;
 	flex:0 1 auto;
+	-webkit-box-flex:0;
 	padding: .28rem .23rem 0 0rem;
 }
 .zyy-wzms textarea{
