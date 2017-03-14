@@ -1,5 +1,7 @@
 var mySwiper = new Swiper('.swiper-container', {
 	slidesPerView : 'auto',
-	centeredSlides : true,
-	// pagination : '.swiper-pagination'
+	centeredSlides : true
+})
+var mySwiper2 = new Swiper('.posi', {
+	slidesPerView : 'auto'
 })

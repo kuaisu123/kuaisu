@@ -3,6 +3,7 @@ body{
 }
 *{
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 /*导航栏开始*/
 header{
@@ -10,7 +11,6 @@ header{
     height: 0.88rem;
     background: #3867fa;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
@@ -22,7 +22,6 @@ header .left{
     width: 1.4rem;
     height:100%;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: space-around;
     font-size: 0.22rem;
@@ -44,7 +43,6 @@ header .right{
     height:100%;
     padding-right: 0.24rem;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -74,10 +72,12 @@ section a{
     height:0.94rem;
     background: #396cff;
     border-radius: 0.47rem;
+    -webkit-border-radius: 0.47rem;
     margin: 0.64rem auto;
     font-size: 0.34rem;
     color: #fff;
     text-align: center;
     line-height: 0.94rem;
     box-shadow: 0 0.05rem 0.2rem 0.02rem #396cff;
+    -webkit-box-shadow: 0 0.05rem 0.2rem 0.02rem #396cff;
 }

@@ -39,14 +39,55 @@
         </div>
         <!--重置功能-->
         <div class="reset">
-            <span>重置</span>
-            <div></div>
+            <span class="set">重置</span>
+            <div class="your">
+                您
+                <img src="images/yws_img/your_03.png" alt="">
+                <img src="images/yws_img/your1_03.png" alt="">
+                <img src="images/yws_img/your2_03.png" alt="">
+                <img src="images/yws_img/your3_03.png" alt="">
+            </div>
             <span><a href="actdtl.html">下一步</a></span>
         </div>
     </section>
     <!--内容结束-->
 </body>
-
+<script src="js/zepto.min.js"></script>
 <script src="js/touch.min.js"></script>
-<script src="js/yws_js/my.js"></script>
+<script>
+    var plays = $(".more div");
+    var set = $(".set");
+    var your = $(".your");
+    var imgs = $(".your img");
+    var num=0;
+    // 重置功能
+    touch.on(set,"tap",function(){
+        for (var i = 0; i < plays.length; i++) {
+            plays[i].style.background="";
+        };
+        for (var i = 0; i < imgs.length; i++) {
+            imgs[i].style.display="none";
+        };
+        num=0;
+    })
+    // 点击切换背景
+    for (var i = 0; i < plays.length; i++) {
+        touch.on(plays[i],"click",function () {
+            num++;
+            console.log(this);
+            if (num<5) {
+                this.style.background="url(images/yws_img/tn-y7.png)no-repeat center center/contain";
+                imgs[num-1].style.display="inline-block";
+            }else{
+                this.style.background="";
+                for (var i = 0; i < plays.length; i++) {
+                    touch.off(plays[i],"click",function(){
+                        
+                    });
+                };
+            };
+        });
+    };
+</script>
+<script src="js/touch.min.js"></script>
 </html>

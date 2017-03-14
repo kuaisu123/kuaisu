@@ -3,6 +3,7 @@ body{
 }
 *{
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 /*导航栏开始*/
 header{
@@ -10,7 +11,6 @@ header{
     height: 0.88rem;
     background: #3867fa;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
@@ -22,7 +22,6 @@ header .left{
     width: 1.4rem;
     height:100%;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: space-around;
     font-size: 0.22rem;
@@ -43,11 +42,11 @@ header .right{
     width: 0.42rem;
     height:0.42rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     background: url("../../images/yws_img/shaixuan.png") no-repeat center bottom /contain;
     background-color: #fff;
     padding-right: 0.24rem;
     display: flex;
-    display:-webkit-flex;
     margin-right: 0.5rem;
     align-items: center;
     justify-content: space-between;
@@ -64,8 +63,10 @@ section{
     height:auto;
     width:100%;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
     padding: 0.15rem 0.64rem 0.11rem 0.64rem;
     border-radius: 0.12rem;
+    -webkit-border-radius: 0.12rem;
     position: relative;
     margin-top: 0.3rem;
 }
@@ -73,8 +74,10 @@ section{
     width:0.78rem;
     height:0.78rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     border:0.02rem solid #fff;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.21);
     position: absolute;
     top:-0.2rem;left:-0.2rem;
     background: url("../../images/yws_img/man.png")no-repeat center center/cover;
@@ -83,10 +86,7 @@ section{
     width:100%;
     height:auto;
     display: flex;
-    display:-webkit-flex;
     flex-direction: column;
-    -webkit-box-orient:vertical;
-  -webkit-box-direction: normal;
 }
 .user1 .content span{
     color:#999999;
@@ -98,6 +98,7 @@ section{
     height:0.21rem;
     border:0.08rem solid #3867fa;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
 }
 .user1 .content p{
     line-height: 1.5;
@@ -108,6 +109,7 @@ section{
     width:3.52rem;
     height:1.52rem;
     border-radius: 0.06rem;
+    -webkit-border-radius: 0.06rem;
     background: url("../../images/yws_img/datong_03.png")no-repeat center center/cover;
 }
 .user1 .talk{
@@ -117,7 +119,6 @@ section{
     line-height: 0.56rem;
     border-top: 1px dashed #000;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: flex-end;
     color: #a9a9a9;
@@ -126,8 +127,10 @@ section{
 .user1 .talk .sixin{
      width:0.4rem;
      height:0.4rem;
-     border-radius: 50%;
-     box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.39);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.39);
      background: url("../../images/yws_img/sixin.png")no-repeat center center/80%;
  }
  .user1 .talk .sixin a{
@@ -139,7 +142,9 @@ section{
     width:0.4rem;
     height:0.4rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.39);
     background: url("../../images/yws_img/pinlun.png")no-repeat center center/80%;
 }
 .user1 .talk div{
@@ -151,6 +156,7 @@ section{
     height:0.73rem;
     margin:0 auto;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     background: url("../../images/yws_img/edit_03.png")no-repeat center center/cover;
 }
 /*内容结束*/

@@ -5,15 +5,13 @@ body{
     font-size:16px;
     color:#fff;
     display: flex;
-    display:-webkit-flex;
     flex-direction:column;
-    -webkit-box-orient:vertical;
-  -webkit-box-direction: normal;
     flex-grow:1;
     -webkit-box-flex:1;
 }
 *{
-    box-sizing:border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 /*导航栏开始*/
 header{
@@ -21,7 +19,6 @@ header{
     height: 0.88rem;
     background: #3867fa;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
@@ -34,7 +31,6 @@ header .left{
     height:100%;
     padding-left: 0.24rem;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: space-around;
     font-size: 0.22rem;
@@ -57,7 +53,6 @@ header .right{
     height:100%;
     padding-right: 0.24rem;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -65,8 +60,10 @@ header .right a{
     width:0.42rem;
     height:0.42rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     background: #fff;
     box-shadow: 0 10px 30px  2px #3b61ad;
+    -webkit-box-shadow: 0 10px 30px  2px #3b61ad;
 }
 header .right a:first-child{
     background: url("../../images/yws_img/position.png")no-repeat center center/80%;
@@ -104,6 +101,7 @@ section .hot i{
     width:0.35rem;
     height:0.03rem;
     border-radius: 0.03rem;
+    -webkit-border-radius: 0.03rem;
     background: #c8e5f5;
 }
 section .hot em{
@@ -111,11 +109,12 @@ section .hot em{
     width:0.03rem;
     height:0.03rem;
     border-radius: 0.03rem;
+    -webkit-border-radius: 0.03rem;
     background: #c8e5f5;
 }
 section .hot a{
     display: inline-block;
-    width:0.9rem;  height:0.8rem;
+    width:0.9rem;height:0.8rem;
     color:#3867fa;
     background: url("../../images/yws_img/nore_03.png")no-repeat center center/contain;
     float: right;
@@ -123,31 +122,30 @@ section .hot a{
 }
 section .mudi{
     width:90%;
-    height:auto;
+    height:3.4rem;
     overflow: hidden;
     position: relative;
 }
 section .mudi .contain{
     display: flex;
-    display:-webkit-flex;
     align-items: center;
+    position: absolute;
+    left:-2rem;
 }
 section .mudi .contain .swiper-slide{
     margin: 0 0.1rem;
     border-radius: 0.12rem;
+    -webkit-border-radius: 0.12rem;
     width:2.4rem!important;
     height:3.4rem;
     box-shadow: 0 0 3px 1px #c8e5f5;
+    -webkit-box-shadow: 0 0 3px 1px #c8e5f5;
     overflow: hidden;
     position: relative;
 }
 section .mudi .contain .list{
     display: flex;
-    display:-webkit-flex;
-    align-items: center;
     flex-direction: column;
-    -webkit-box-orient:vertical;
-  -webkit-box-direction: normal;
     justify-content: flex-start;
 }
 section .mudi .contain .list img{
@@ -175,18 +173,19 @@ section .mudi .contain .list .tri{
     width:0.56rem;
     height:0.56rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     background: url("../../images/yws_img/trixing.png")no-repeat center 0.12rem/60%;
     background-color: #fff;
     position: absolute;
     right:0.23rem;
     bottom: 0.95rem;
     box-shadow: 0 5px 20px 2px rgba(88, 117, 255, 0.58);
+    -webkit-box-shadow: 0 5px 20px 2px rgba(88, 117, 255, 0.58);
 }
 section .mudi .lunbo{
     width:100%;
     height:0.5rem;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: center;
 }
@@ -194,8 +193,10 @@ section .mudi .lunbo li{
     width: 0.11rem;
     height:0.11rem;
     border-radius: 0.05rem;
+    -webkit-border-radius: 0.05rem;
     margin: 0 0.05rem;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.29);
 }
 section .mudi .lunbo .active{
     width:0.26rem;
@@ -207,7 +208,6 @@ section .tour{
     height:auto;
     padding: 0 0.3rem;
     display: flex;
-    display:-webkit-flex;
     justify-content: space-around;
 }
 section .tour .contain{
@@ -219,7 +219,9 @@ section .tour .contain a{
     display: block;
     height:auto;
     border-radius: 0.08rem;
+    -webkit-border-radius: 0.08rem;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.21);
     background: #fff;
     padding: 0 0.16rem;
     flex: 1 0 auto;
@@ -231,7 +233,6 @@ section .tour .contain a .person{
     height:0.93rem;
     border-bottom: 1px solid #f4f4f4;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     color:#000;
 }
@@ -239,17 +240,16 @@ section .tour .contain a .person .pic{
     width:0.7rem;
     height:0.7rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     border: 0.03rem solid #fff;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.14);
     background: url("../../images/yws_img/woman.png")no-repeat right top/150%;
 }
 section .tour .contain a .person .detile{
     margin-left: 0.2rem;
     display: flex;
-    display:-webkit-flex;
     flex-direction: column;
-    -webkit-box-orient:vertical;
-  -webkit-box-direction: normal;
 }
 section .tour .contain a .person .detile .name{
     font-size: 0.26rem;
@@ -278,7 +278,7 @@ section .tour .contain a .talk{
 /*旅途中约伴结束*/
 /*内容结束*/
 
-/*$footer 底部 开始*/
+/*底部 开始*/
 footer{
     flex-grow:0;
     -webkit-box-flex:0;
@@ -286,7 +286,6 @@ footer{
     height: 0.98rem;
     background: #003EFF;
     display: flex;
-    display:-webkit-flex;
     font-size: 12px;
     justify-content: space-around;
 }
@@ -295,24 +294,23 @@ footer *{
 }
 footer a{
     display: flex;
-    display:-webkit-flex;
     color: #fff;
     flex-direction: column;
-    -webkit-box-orient:vertical;
-  -webkit-box-direction: normal;
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     padding: 0.04rem;
 }
 footer a i{
     background: #1850ff;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     position: relative;
     width: 0.51rem;
     height: 0.51rem;
     box-shadow: 0 5px 2px 0 rgba(0,18,76,.23);
-    position: relative;
+    -webkit-box-shadow: 0 5px 2px 0 rgba(0,18,76,.23);
     border: 1px solid white;
 }
 footer a i img{

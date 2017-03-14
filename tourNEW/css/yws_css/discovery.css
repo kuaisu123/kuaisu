@@ -5,14 +5,14 @@ body{
 }
 *{
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 /*导航栏开始*/
 header{
     width:100%;
     height: 0.88rem;
     background: #3867fa;
-    display: flex;
-    display:-webkit-flex;
+    display: flex; 
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
@@ -24,7 +24,6 @@ header .left{
     width: 1.4rem;
     height:100%;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: space-around;
     font-size: 0.22rem;
@@ -46,7 +45,6 @@ header .right{
     height:100%;
     padding-right: 0.24rem;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -64,20 +62,18 @@ section{
     margin: 0 auto;
     background: #fff;
     border-radius: 0 0 0.12rem 0.12rem;
+    -webkit-border-radius: 0 0 0.12rem 0.12rem;
     display: flex;
-    display:-webkit-flex;
     justify-content: center;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.27);
+    -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.27);
 }
 .hide .list{
     width: 0.8rem;
     height:1.12rem;
     margin: 0 0.42rem;
     display: flex;
-    display:-webkit-flex;
     flex-direction: column;
-    -webkit-box-orient:vertical;
-  -webkit-box-direction: normal;
     align-items: center;
     justify-content: center;
     color: #3867fa;
@@ -87,6 +83,7 @@ section{
     width:0.5rem;
     height: 0.5rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     margin-bottom: 0.1rem;
     background: url("../../images/yws_img/firend_03.png") no-repeat center center/60%;
     background-color:#4254ff;
@@ -112,37 +109,63 @@ section{
     width:5.6rem;
     height:5.6rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     background: rgba(252, 253, 255, 0.32);
     position: absolute;
     bottom: 1.8rem;
     left:0.4rem;
     display: flex;
-    display:-webkit-flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 30px 5px rgba(13, 67, 113, 0.51);
+    -webkit-box-shadow: 0 0 30px 5px rgba(13, 67, 113, 0.51);
 }
 .searchbox .search .search1{
     width:4rem;
     height:4rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     background: rgba(253, 254, 254, 0.37);
     display: flex;
-    display:-webkit-flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 30px 5px rgba(13, 67, 113, 0.51);
+    -webkit-box-shadow: 0 0 30px 5px rgba(13, 67, 113, 0.51);
+    position: relative;
 }
 .searchbox .search .search1 .search2{
     width:2.6rem;
     height:2.6rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     background: rgba(253, 254, 255, 0.42);
     text-align: center;
     line-height: 2.6rem;
     font-size: 0.3rem;
     color:#4254ff;
     box-shadow: 0 0 30px 5px rgba(13, 67, 113, 0.51);
+    -webkit-box-shadow: 0 0 30px 5px rgba(13, 67, 113, 0.51);
+}
+.searchbox .search .search1 .dian {
+    background: linear-gradient(257deg,rgba(13, 67, 113, 0.6), rgba(13, 67, 113, 0));
+    border-radius: 0 0 2.8rem;
+    -webkit-border-radius: 0 0 2.8rem;
+    height: 2.8rem;width: 2.8rem;
+    top: 50%;left: 50%;
+    position: absolute;
+    transform-origin: 0 0 0;
+    z-index: 999;
+}
+.searchbox .search .search1 .dian {
+    animation: 3s linear 0s normal both infinite running rounds;
+}
+@keyframes rounds {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 .searchbox .person{
     position: absolute;
@@ -151,6 +174,7 @@ section{
     width:0.8rem;
     height:0.8rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     right:1.05rem;
     bottom: 4rem;
     background: url("../../images/yws_img/woman.png")no-repeat center center/cover;
@@ -159,6 +183,7 @@ section{
     width:1rem;
     height:1rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     right:3.05rem;
     top: 2.3rem;
     background: url("../../images/yws_img/woman.png")no-repeat center center/cover;
@@ -167,6 +192,7 @@ section{
     width:0.6rem;
     height:0.6rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     left:1.05rem;
     top: 2rem;
     background: url("../../images/yws_img/woman.png")no-repeat center center/cover;
@@ -175,6 +201,7 @@ section{
     width:0.5rem;
     height:0.5rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     left:2.05rem;
     top: 4rem;
     background: url("../../images/yws_img/woman.png")no-repeat center center/cover;
@@ -183,6 +210,7 @@ section{
     width:0.5rem;
     height:0.5rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     left:2.05rem;
     bottom: 2rem;
     background: url("../../images/yws_img/woman.png")no-repeat center center/cover;
@@ -198,6 +226,7 @@ section{
     width:0.5rem;
     height:0.5rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     text-align: center;
     line-height: 0.5rem;
     color: #fff;
@@ -224,15 +253,13 @@ section{
     right:0.5rem;
     top:1.8rem;
     display: flex;
-    display:-webkit-flex;
     flex-direction: column;
-    -webkit-box-orient:vertical;
-  -webkit-box-direction: normal;
 }
 .searchbox .right a{
     width:0.54rem;
     height:0.54rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
 }
 .searchbox .right a:nth-child(2){
     margin:0.2rem 0;
@@ -257,9 +284,11 @@ section{
     width:1.1rem;
     height:1.1rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     background: url("../../images/yws_img/zhinanzhen.png")no-repeat center center;
     background-color: #fff;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.25);
     position: relative;
 }
 .searchbox .left .zhen span{
@@ -279,7 +308,6 @@ section{
     width:100%;
     height:50%;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     color:#5367ff;
 }
@@ -288,6 +316,7 @@ section{
     width:0.35rem;
     height:0.35rem;
     border-radius:50%;
+    -webkit-border-radius:50%;
     background: url("../../images/yws_img/friends_03.png")no-repeat center center/60%;
     background-color: #5367ff;
 }
@@ -302,6 +331,7 @@ section{
     width:0.07rem;
     height:0.96rem;
     border-radius: 0.03rem;
+    -webkit-border-radius: 0.03rem;
     background: #5367ff;
     position: absolute;
     right:-0.14rem;
@@ -341,6 +371,7 @@ section{
     background: url("../../images/yws_img/delete_03.png")no-repeat center center/60%;
     background-color: #e6e6e6;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     position: absolute;
     right:-0.1rem;top:-0.1rem;
 }
@@ -348,6 +379,7 @@ section{
     width:1.26rem;
     height:1.26rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
     border:0.03rem solid #fff;
     background: url("../../images/yws_img/woman.png")no-repeat center center/cover;
     position: absolute;

@@ -3,6 +3,7 @@ body{
 }
 *{
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 /*导航栏开始*/
 header{
@@ -10,7 +11,6 @@ header{
     height: 0.88rem;
     background: #3867fa;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
@@ -22,7 +22,6 @@ header .left{
     width: 1.4rem;
     height:100%;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: space-around;
     font-size: 0.22rem;
@@ -47,7 +46,6 @@ header .right{
     background-color: #fff;
     padding-right: 0.24rem;
     display: flex;
-    display:-webkit-flex;
     margin-right: 0.5rem;
     align-items: center;
     justify-content: space-between;
@@ -74,6 +72,7 @@ section{
     left:0.76rem;
     background: #3867fa;
     border-radius: 0.12rem;
+    -webkit-border-radius: 0.12rem;
 }
 .action .posi{
     width:100%;
@@ -110,7 +109,6 @@ section{
     width:100%;
     height:1rem;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: flex-start;
 }
@@ -126,6 +124,7 @@ section{
     font-size: 0.18rem;
     margin-left: 0.3rem;
     border-radius: 0.26rem;
+    -webkit-border-radius: 0.26rem;
     background: #fff;
     box-shadow: 0 0 .2rem 0.02rem rgba(0, 0, 0, 0.27);
 }
@@ -138,8 +137,8 @@ section{
     border:0.02rem solid #e1e1e1;
     border-radius: 0.26rem;
     box-shadow: none;
+    -webkit-box-shadow: none;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content:space-around;
 }
@@ -154,7 +153,6 @@ footer{
     width:100%;
     height:1.1rem;
     display: flex;
-    display:-webkit-flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -162,7 +160,6 @@ footer{
 }
 footer>div{
     display: flex;
-    display:-webkit-flex;
     height:100%;
     align-items: center;
     justify-content: space-around;
@@ -180,7 +177,6 @@ footer .put i{
 }
 footer .buy{
     display: flex;
-    display:-webkit-flex;
     width:40%;
     height: 100%;
     background: #3867fa;
